@@ -2,200 +2,130 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Informática del CPEM 7
-  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Responsive Template with Aside</title>
+  <link rel="stylesheet" href="css/estilos.css" .css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      aside {
+        display: none;
+      }
 
-  <link rel="stylesheet" href="css/style.css">
-
+      main section {
+        height: calc(85vh + 15vh);
+        /* Ocupa todo el espacio sin aside en móviles */
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Contenedor principal -->
-  <div class="container">
-    <!-- Encabezado -->
-    <header>
-      <figure>
-        <img src="assets/logo1.jpg" style="flex-basis: 30%;" alt="Logo de la Academia" />
-        <!-- Inserta el logo aquí -->
-      </figure>
-      <h1 class="grid-item">CPEM 7 - INFORMATICA</h1>
-      <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
 
-    </header>
-    <!-- NAV-->
-    <nav class="nav-links" id="nav-links">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="html/html.html">Html</a></li>
-        <li><a href="html/css.html">Css</a></li>
-        <li><a href="html/trabajos-practicos.html">Trabajos Practicos</a></li>
-        <li><a href="html/experiencias-web.html">Experiencias Web</a></li>
-
+  <!-- Header -->
+  <header class="p-3 d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="assets/logo9.png" alt="Logo" class="logo">
+      <h1 class="ms-3 h5">INFORMATICA<br>CPEM 7</h1>
+    </div>
+    <nav class="d-none d-md-block">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="html/html.html">Html</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="html/css.html">Css</a></li>
+       
       </ul>
     </nav>
-    <!-- MENU HAMBURGUESA-->
-    <nav class="nav-burger">
-
-    </nav>
-
-    </header>
-
-    <!-- Banner -->
-    <div class="banner">
-      <!-- Banner con imagen de fondo -->
-    </div>
-
-    <!-- Contenido principal -->
-    <div class="contenido-principal">
-      <main>
-        <article>
-          <h2>¡Bienvenidos a la Página de Informática del CPEM 7!
-          </h2>
-          <h3>Tu viaje comienza aquí</h3>
-          <p>En el CPEM 7 de Junín de los Andes, la clase de informática no es solo otra asignatura, es la puerta que te
-            abre al mundo digital.
-          </p>
-          <p>Aquí aprenderás a dominar herramientas que están transformando el mundo y que serán
-            parte esencial de tu vida, tanto profesional como personal.
-          </p>
-        </article>
-
-        <article>
-          <h3> ¿Qué encontrarás en esta página?</h3>
-          <p>Este es tu espacio. Aquí vas a encontrar toda la teoría, los prácticos, y los recursos necesarios para que
-            tu
-            aprendizaje sea completo y significativo. Pero no se trata solo de estudiar, sino de entender cómo cada
-            concepto puede impactar tu futuro. La informática te da el poder de crear, diseñar y resolver problemas.
-          </p>
-        </article>
-
-        <article>
-          <h2>¡Vos
-            podés ser quien cree la próxima gran innovación!</h2>
-          </p>
-          <h3>En esta era de la educación 3.0, nuestro objetivo es llevar la enseñanza a un nuevo nivel
-          </h3>
-          <p>Aquí encontrarás
-            un
-            acceso fácil y directo a recursos de calidad que te ayudarán a entender y dominar el desarrollo web. Cada
-            lección, cada práctica, y cada proyecto están diseñados para brindarte la mejor experiencia educativa
-            posible.
-          </p>
-        </article>
-
-        <article>
-          <p>
-            Bienvenido a la Educación 3.0 en Desarrollo Web
-            Mejorando la accesibilidad y experiencia educativa a través de recursos digitales.
-          </p>
-          <p>
-            Únite a nuestra comunidad y comenza tu viaje en el mundo del
-            desarrollo web con nosotros.
-          </p>
-          <h3>Recursos a Tu Alcance</h3>
-
-          <p>Te ofrecemos hojas de ruta que te guiarán en tu proceso de aprendizaje, así como enlaces a plataformas como
-            W3Schools y FreeCodeCamp, donde podrás encontrar tutoriales interactivos y ejercicios prácticos. Además,
-            hemos
-            recopilado cursos gratuitos y de pago, como los de CoderHouse, para que elijas la opción que mejor se adapte
-            a
-            tus necesidades y objetivos.</p>
-        </article>
-
-        <article>
-          <span style="font-weight: bolder;">
-            Nuestro compromiso es acompañarte en cada etapa de tu formación. Aquí, recibirás el apoyo de tus compañeros
-            y
-            de
-            mí, el profesor Julián E. Frete. No dudes en compartir tus dudas, logros y experiencias. Este espacio
-            es tuyo y cada interacción cuenta.
-          </span>
+    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>
 
 
-          <h3>Únete a Nuestra Comunidad</h3>
-          <p>¡Comencemos!
-            El primer paso es el más importante
-            Te animo a explorar los recursos disponibles, participar en nuestras actividades y no dudar en pedir ayuda
-            cuando la necesites. Juntos, haremos de este viaje una experiencia inolvidable.
-          </p>
-        </article>
-
-      </main>
-      <!-- Barra lateral -->
-      <aside>
-        <h2>Últimas Noticias</h2>
-        <ul>
-          <li><a href="#">Nuevo curso de React.js disponible</a></li>
-          <li>
-            <a href="#">Cómo mejorar tu portfolio como desarrollador</a>
-          </li>
-          <li><a href="#">Tendencias en diseño web para 2024</a></li>
-          <li><a href="#">10 consejos para entrevistas técnicas</a></li>
-        </ul>
-        <p>🚀 ¿Estás listo para ser un profesional del futuro?
-          Esta página es tu herramienta para alcanzar todo tu potencial. Estás en el camino correcto. Lo que aprendés
-          hoy en esta clase será una ventaja clave mañana. Aprovechá cada recurso, estudiá con entusiasmo, y recordá
-          que
-          todo lo que logres en informática puede abrirte puertas en cualquier campo que elijas.
-
-          ¡La tecnología está en tus manos!</p>
+  <!-- Main content with aside -->
+  <main class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3">
+        <h3>Expande tus conocimientos</h3>
+          <p>Aparte de este taller de informática, tenés a tu disposición una gran cantidad de recursos que te permitirán seguir aprendiendo.
+          </p> 
+          <p>Podés complementar lo que ves en clase con la documentación oficial de las principales tecnologías:</p>
+          
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a> - La guía oficial de Mozilla para HTML, CSS, y JavaScript.</li>
+            <li><a href="https://www.w3.org/TR/html52/" target="_blank">W3C HTML5 Specification</a> - Documentación oficial del consorcio que desarrolla los estándares web.</li>
+            <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">ECMAScript (JavaScript) Specification</a> - Especificación oficial de JavaScript.</li>
+          </ul>
+          <br>
+          <p>Una vez que completes los conocimientos básicos de este curso, estarás preparado para dar el siguiente paso en tu formación. Podés explorar otras instancias de aprendizaje con cursos pagos o bootcamps que te ayudarán a profundizar en desarrollo web y programación:</p>
+          
+          <h3>Cursos Pagos y Bootcamps Recomendados:</h3>
+          <ul>
+            <li>
+              <a href="https://www.coderhouse.com/" target="_blank">CoderHouse</a> - Ofrecen cursos de desarrollo web y programación orientados a proyectos prácticos.
+            </li>
+                       
+          </ul>
+          <br>
+        
+          <p>Para los que buscan opciones gratuitas, plataformas como <a href="https://www.freecodecamp.org/" style="color:white" target="_blank">FreeCodeCamp</a> ofrecen una amplia variedad de tutoriales interactivos para aprender a programar desde cero, con proyectos que te permiten aplicar lo aprendido.</p>
+          <p>Explorá estas opciones y elegí la que mejor se ajuste a tus necesidades. ¡Tu futuro en la tecnología empieza aquí!</p>
+      
+        <br>
+        <h3>HOJA DE RUTA DE RECURSOS</h3>  
+        <ol class="nav flex-column">
+        
+          <li class="nav-item"><a class="nav-link" href="#">HACE LA TAREA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">W3SCHOOLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CODERHOUSE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BOOTCAMP</a></li>
+        </ol>
       </aside>
-    </div>
 
-    <!-- Mapa de Google -->
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12234.219822401723!2d-71.0719897!3d-39.9513435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96119960cb01e1e9%3A0xee5b6e8c7c2089b5!2sCPEM%20Nro.%207%20Malvinas%20Argentinas!5e0!3m2!1ses!2sar!4v1728330085625!5m2!1ses!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      <main class="col-md-9 p-4">
+        <!-- Contenido principal -->
+        <section class="contenido-principal">
+          <article>
+            <h2>¡Bienvenidos a la Página de Informática del CPEM 7!</h2>
+            <h3>Tu viaje comienza aca</h3>
+            <p>En el CPEM 7 de Junín de los Andes, la clase de informática no es solo otra asignatura, es la puerta
+              que te abre al mundo digital. Aquí aprenderás a dominar herramientas que están transformando el mundo y
+              que serán parte esencial de tu vida, tanto profesional como personal.</p>
+            <p>Este espacio está diseñado para que tu aprendizaje sea completo y significativo. Encontrarás toda la
+              teoría, los prácticos, y los recursos necesarios para desarrollar habilidades que impactarán tu futuro.
+              No solo se trata de estudiar, sino de entender cómo cada concepto te da el poder de crear, diseñar y
+              resolver problemas.</p>
+          </article>
 
-    <!-- Pie de página -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="social-links">
-          <a href="https://facebook.com" target="_blank" class="social-icon">
-            <img src="assets/logos/facebook-removebg-preview (1).png" alt="Facebook">
-          </a>
-          <a href="https://twitter.com" target="_blank" class="social-icon">
-            <img src="assets/logos/twitter-removebg-preview (1).png" alt="Twitter">
-          </a>
-          <a href="https://instagram.com" target="_blank" class="social-icon">
-            <img src="assets/logos/instagram-removebg-preview (1).png" alt="Instagram">
-          </a>
-          <a href="https://linkedin.com" target="_blank" class="social-icon">
-            <img src="assets/logos/linkedin-removebg-preview (1).png" alt="LinkedIn">
-          </a>
-          <a href="https://youtube.com" target="_blank" class="social-icon">
-            <img src="assets/logos/youtube-removebg-preview (2).png" alt="YouTube">
-          </a>
-        </div>
-        <p class="footer-text">
-          © 2024 Nombre de la Empresa. Todos los derechos reservados. <br>
-          Dirección: Calle Falsa 123, Ciudad, País. <br>
-          Teléfono: (123) 456-7890. <br>
-          Email: contacto@empresa.com
-        </p>
-      </div>
-    </footer>
-  </div>
-  <script>
-    // Seleccionar elementos
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+          <article>
+            <h2>¡Vos podés ser quien cree la próxima gran innovación!</h2>
+            <h3>En esta era de la educación 3.0, nuestro objetivo es llevar la enseñanza a un nuevo nivel</h3>
+            <p>Accedé a recursos de calidad que te ayudarán a entender y dominar el desarrollo web. Cada lección,
+              práctica y proyecto está diseñado para brindarte la mejor experiencia educativa posible. Desde
+              tutoriales interactivos en plataformas como W3Schools y FreeCodeCamp, hasta cursos gratuitos y de pago
+              como los de CoderHouse, encontrarás hojas de ruta que te guiarán en tu proceso de aprendizaje.</p>
+          </article>
 
-    // Agregar evento para mostrar/ocultar menú
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-    });
+          <article>
+            <h3>Recursos a tu alcance</h3>
+            <p>Además de los recursos digitales, también tendrás el apoyo constante de tus compañeros y de mí, el
+              profesor Julián E. Frete. Este espacio es tuyo para compartir dudas, logros y experiencias. Aquí nos
+              apoyamos mutuamente, porque creemos que el aprendizaje colaborativo es clave para el éxito.</p>
+            <h3>Únete a nuestra comunidad</h3>
+            <p>¡Comencemos! El primer paso es el más importante. Explorá los recursos disponibles, participá en
+              nuestras actividades y no dudes en pedir ayuda cuando la necesites. Juntos, haremos de este viaje una
+              experiencia inolvidable.</p>
+          </article>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="text-center p-3">
+        <p>Footer Section</p>
+      </footer>
 
-  </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
