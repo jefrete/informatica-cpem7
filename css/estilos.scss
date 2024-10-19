@@ -1,0 +1,223 @@
+@import 'variables';
+
+// Reset básico de márgenes y paddings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Mixin para las media queries
+@mixin breakpoint($size) {
+  @if $size ==mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+      @content;
+    }
+  }
+
+  @else if $size ==tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  }
+
+  @else if $size ==desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+      @content;
+    }
+  }
+}
+
+// Header
+header {
+  background-color: $primary-color;
+  color: $light-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 200px; // Tamaño del logo
+  }
+
+  h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 1rem;
+
+      a {
+        color: $light-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  // Estilos para botón móvil
+  .navbar-toggler {
+    display: none; // Ocultamos por defecto en desktop
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; // Mostramos en pantallas pequeñas
+  }
+
+  nav {
+    display: none; // Ocultamos el menú en móvil
+  }
+}
+
+// Aside
+aside {
+  background-color: $secondary-color;
+  padding: 1rem;
+  color: #000000;
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;  
+  }
+
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Main content
+main {
+  background-color: #ffffff;
+  overflow-y: auto;
+  section {
+    background-color: $light-color;
+    padding: 2rem;
+    overflow-y: auto;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $dark-color;
+  color: white;
+  height: 200px;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+    
+  p {
+    margin: 0;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  aside {
+    display: none; // Ocultamos el aside en pantallas pequeñas
+  }
+
+  main section {
+    height: calc($content-height + 300px); // Ajustamos el tamaño del contenido cuando el aside no está visible
+  }
+}
+
+@include breakpoint(desktop) {
+  .sidebar {
+    width: 25%;
+  }
+
+  .main {
+    width: 70%;
+  }
+}
+
+// Mixin para media queries
+@mixin breakpoint($size) {
+  @if $size == mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+      @content;
+    }
+  }
+}
+
+/*
+
+// Mixin para padding
+@mixin padding-responsive($mobile, $desktop) {
+  padding: $mobile;
+
+  @include breakpoint(desktop) {
+    padding: $desktop;
+  }
+}
+
+// Media Queries solo para cambios específicos
+@include breakpoint(tablet) {
+  .sidebar {
+    float: left;
+    width: 40%;
+  }
+
+  .main {
+    float: right;
+    width: 60%;
+  }
+}
+*/
