@@ -137,7 +137,32 @@ main {
       margin-bottom: 1rem;
       line-height: 1.6;
     }
+
+    li{
+      list-style: none;
+    }
+    ol,ul{
+      padding: 0 !important;
+      margin: 0 !important;
+    }
   }
+}
+
+pre {
+  background-color: #000000 !important;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #ffffff;
+}
+
+code {
+  background-color: #000000 !important;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap; /* Permite que las líneas largas se ajusten */
+  display: block;
+  color: greenyellow !important;
+  padding: 1rem;
 }
 
 // Footer

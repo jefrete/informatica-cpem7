@@ -98,6 +98,30 @@ main section p {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
+main section li {
+  list-style: none;
+}
+main section ol, main section ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+pre {
+  background-color: #000000 !important;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #ffffff;
+}
+
+code {
+  background-color: #000000 !important;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap; /* Permite que las líneas largas se ajusten */
+  display: block;
+  color: greenyellow !important;
+  padding: 1rem;
+}
 
 footer {
   background-color: #0e0f10;
