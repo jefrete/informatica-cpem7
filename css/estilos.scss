@@ -22,64 +22,31 @@ header {
   display: flex; // Usamos flexbox para la disposición
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: start; // Espaciado entre elementos
-  height: 250px; // Altura del header
-
   // Estilos del logo
   .logo {
-    width: 150px; // Tamaño del logo
-
+    width: 175px; // Tamaño del logo
+    padding: 2rem;
+    margin-top: 3.5rem;
     // Estilos del título (h1) dentro del logo
     h1 {    
       margin-left: 1rem; // Espaciado a la izquierda del título
      // Tamaño de fuente del título
-      color: #000000; // Color negro (usar !important con cuidado)
+      color: #15ff00 !important; // Color negro (usar !important con cuidado)
     }
   }
 }
-
-
-nav {
-  ul {
-    display: flex;
-    list-style: none;
-
-    li {
-      margin-left: 1rem;
-
-      a {
-        color: $light-color;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  // Estilos para botón móvil
-  .navbar-toggler {
-    display: none; // Ocultamos por defecto en desktop
-  }
-}
-
 
 // Main content
 main {
   background-color: #ffffff;
-  overflow-y: auto;
-
+  flex-direction: column;
   section {
     background-color: $light-color;
     padding: 1rem;
-    overflow-y: auto;
-
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
-
     p {
       font-size: 1rem;
       margin-bottom: 1rem;
@@ -100,6 +67,8 @@ main {
 
 // Aside
 aside {
+  display: flex;
+  flex-direction: column;
   background-color: $secondary-color;
   padding: 1rem;
   color: #000000;
@@ -176,7 +145,29 @@ footer {
 @media (min-width: 768px) {
   header {
     background-color: rgb(195, 0, 255);
+    // Estilos del logo
+    .logo {
+      width: 250px; // Tamaño del logo
+      // Estilos del título (h1)
+      h1 {    
+        margin-left: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #000000; // Color negro (usar !important con cuidado)
+      }
+    }
   }
+  
+#barra-nav{
+  display: none;
+}
+#desktop-nav{
+  display: block;
+}
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   pre {
     background-color: #000000 !important;
     padding: 10px;

@@ -14,43 +14,24 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: start;
-  height: 250px;
 }
 header .logo {
-  width: 150px;
+  width: 175px;
+  padding: 2rem;
+  margin-top: 3.5rem;
 }
 header .logo h1 {
   margin-left: 1rem;
-  color: #000000;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  margin-left: 1rem;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
-nav .navbar-toggler {
-  display: none;
+  color: #15ff00 !important;
 }
 
 main {
   background-color: #ffffff;
-  overflow-y: auto;
+  flex-direction: column;
 }
 main section {
   background-color: white;
   padding: 1rem;
-  overflow-y: auto;
 }
 main section h2 {
   font-size: 2rem;
@@ -71,6 +52,8 @@ main section ul {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
   background-color: #ffa200;
   padding: 1rem;
   color: #000000;
@@ -137,6 +120,24 @@ footer p {
 @media (min-width: 768px) {
   header {
     background-color: rgb(195, 0, 255);
+  }
+  header .logo {
+    width: 250px;
+  }
+  header .logo h1 {
+    margin-left: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #000000;
+  }
+  #barra-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
   }
   pre {
     background-color: #000000 !important;
