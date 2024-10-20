@@ -5,25 +5,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 header {
-  background-color: #007bff;
-  color: white;
+  background-color: rgb(255, 255, 0);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5rem;
-  color: white;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
   height: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 header .logo {
-  height: 200px;
+  width: 150px;
 }
-header h1 {
+header .logo h1 {
   margin-left: 1rem;
-  font-size: 1.5rem;
+  color: #000000;
 }
 
 nav ul {
@@ -44,14 +43,33 @@ nav .navbar-toggler {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
+main {
+  background-color: #ffffff;
+  overflow-y: auto;
 }
+main section {
+  background-color: white;
+  padding: 1rem;
+  overflow-y: auto;
+}
+main section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+main section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+main section li {
+  list-style: none;
+}
+main section ol,
+main section ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 aside {
   background-color: #ffa200;
   padding: 1rem;
@@ -80,33 +98,8 @@ aside ul li a:hover {
   text-decoration: underline;
 }
 
-main {
-  background-color: #ffffff;
-  overflow-y: auto;
-}
-main section {
-  background-color: white;
-  padding: 2rem;
-  overflow-y: auto;
-}
-main section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-main section p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-main section li {
-  list-style: none;
-}
-main section ol, main section ul {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 pre {
+  display: block;
   background-color: #000000 !important;
   padding: 10px;
   border-radius: 5px;
@@ -115,9 +108,11 @@ pre {
 }
 
 code {
+  display: block;
   background-color: #000000 !important;
   font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap; /* Permite que las líneas largas se ajusten */
+  white-space: pre-wrap;
+  /* Permite que las líneas largas se ajusten */
   display: block;
   color: greenyellow !important;
   padding: 1rem;
@@ -139,45 +134,47 @@ footer p {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  aside {
-    display: none;
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(195, 0, 255);
   }
-  main section {
-    height: calc(85vh + 300px);
+  pre {
+    background-color: #000000 !important;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
   }
-}
-@media (min-width: 992px) {
-  .sidebar {
-    width: 25%;
-  }
-  .main {
-    width: 70%;
-  }
-}
-/*
-
-// Mixin para padding
-@mixin padding-responsive($mobile, $desktop) {
-  padding: $mobile;
-
-  @include breakpoint(desktop) {
-    padding: $desktop;
+  code {
+    background-color: #000000 !important;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow !important;
+    padding: 1rem;
   }
 }
-
-// Media Queries solo para cambios específicos
-@include breakpoint(tablet) {
-  .sidebar {
-    float: left;
-    width: 40%;
+@media (min-width: 1024px) {
+  header {
+    background-color: red;
   }
-
-  .main {
-    float: right;
-    width: 60%;
+  pre {
+    background-color: #000000 !important;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+  code {
+    background-color: #000000 !important;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow !important;
+    padding: 1rem;
   }
 }
-*/
 
 /*# sourceMappingURL=estilos.css.map */

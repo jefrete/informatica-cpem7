@@ -1,55 +1,43 @@
 @import 'variables';
 
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
 // Reset básico de márgenes y paddings
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-// Mixin para las media queries
-@mixin breakpoint($size) {
-  @if $size ==mobile {
-    @media (max-width: #{$breakpoint-mobile}) {
-      @content;
-    }
-  }
 
-  @else if $size ==tablet {
-    @media (max-width: #{$breakpoint-tablet}) {
-      @content;
-    }
-  }
-
-  @else if $size ==desktop {
-    @media (min-width: #{$breakpoint-desktop}) {
-      @content;
-    }
-  }
+html {
+  font-size: 10px;
 }
 
 // Header
 header {
-  background-color: $primary-color;
-  color: $light-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5rem;
-  color: white;
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgb(255, 255, 0); // Color de fondo del header
+  display: flex; // Usamos flexbox para la disposición
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start; // Espaciado entre elementos
+  height: 250px; // Altura del header
 
+  // Estilos del logo
   .logo {
-    height: 200px; // Tamaño del logo
-  }
+    width: 150px; // Tamaño del logo
 
-  h1 {
-    margin-left: 1rem;
-    font-size: 1.5rem;
+    // Estilos del título (h1) dentro del logo
+    h1 {    
+      margin-left: 1rem; // Espaciado a la izquierda del título
+     // Tamaño de fuente del título
+      color: #000000; // Color negro (usar !important con cuidado)
+    }
   }
 }
+
 
 nav {
   ul {
@@ -69,19 +57,44 @@ nav {
       }
     }
   }
+
   // Estilos para botón móvil
   .navbar-toggler {
     display: none; // Ocultamos por defecto en desktop
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-toggler {
-    display: block; // Mostramos en pantallas pequeñas
-  }
 
-  nav {
-    display: none; // Ocultamos el menú en móvil
+// Main content
+main {
+  background-color: #ffffff;
+  overflow-y: auto;
+
+  section {
+    background-color: $light-color;
+    padding: 1rem;
+    overflow-y: auto;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    ol,
+    ul {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
   }
 }
 
@@ -94,7 +107,7 @@ aside {
   h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    text-align: center;  
+    text-align: center;
   }
 
   ul {
@@ -110,6 +123,7 @@ aside {
         display: block;
         text-decoration: none;
         text-align: center;
+
         &:hover {
           text-decoration: underline;
         }
@@ -118,37 +132,9 @@ aside {
   }
 }
 
-// Main content
-main {
-  background-color: #ffffff;
-  overflow-y: auto;
-  section {
-    background-color: $light-color;
-    padding: 2rem;
-    overflow-y: auto;
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
-    li{
-      list-style: none;
-    }
-    ol,ul{
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-  }
-}
-
 pre {
+  display: block;
+
   background-color: #000000 !important;
   padding: 10px;
   border-radius: 5px;
@@ -157,9 +143,12 @@ pre {
 }
 
 code {
+  display: block;
+
   background-color: #000000 !important;
   font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap; /* Permite que las líneas largas se ajusten */
+  white-space: pre-wrap;
+  /* Permite que las líneas largas se ajusten */
   display: block;
   color: greenyellow !important;
   padding: 1rem;
@@ -172,77 +161,62 @@ footer {
   height: 200px;
   font-weight: 400;
   font-size: 1.5rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   text-align: center;
-    
+
   p {
     margin: 0;
   }
 }
 
-// Responsive adjustments
-@media (max-width: 768px) {
-  aside {
-    display: none; // Ocultamos el aside en pantallas pequeñas
-  }
-
-  main section {
-    height: calc($content-height + 300px); // Ajustamos el tamaño del contenido cuando el aside no está visible
-  }
-}
-
-@include breakpoint(desktop) {
-  .sidebar {
-    width: 25%;
-  }
-
-  .main {
-    width: 70%;
-  }
-}
-
 // Mixin para media queries
-@mixin breakpoint($size) {
-  @if $size == mobile {
-    @media (max-width: #{$breakpoint-mobile}) {
-      @content;
-    }
-  } @else if $size == tablet {
-    @media (max-width: #{$breakpoint-tablet}) {
-      @content;
-    }
-  } @else if $size == desktop {
-    @media (min-width: #{$breakpoint-desktop}) {
-      @content;
-    }
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(195, 0, 255);
   }
+  pre {
+    background-color: #000000 !important;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+  
+  code {
+    background-color: #000000 !important;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow !important;
+    padding: 1rem;
+  }
+  
 }
 
-/*
-
-// Mixin para padding
-@mixin padding-responsive($mobile, $desktop) {
-  padding: $mobile;
-
-  @include breakpoint(desktop) {
-    padding: $desktop;
+@media (min-width: 1024px) {
+  header {
+    background-color: red;
   }
+  pre {
+    background-color: #000000 !important;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+  
+  code {
+    background-color: #000000 !important;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow !important;
+    padding: 1rem;
+  }
+  
 }
-
-// Media Queries solo para cambios específicos
-@include breakpoint(tablet) {
-  .sidebar {
-    float: left;
-    width: 40%;
-  }
-
-  .main {
-    float: right;
-    width: 60%;
-  }
-}
-*/

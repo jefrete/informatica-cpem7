@@ -47,6 +47,7 @@
   <main class="container-fluid">
     <div class="row">
       <aside class="col-md-3">
+      
         <h3>Expande tus conocimientos</h3>
         <p>Aparte de este taller de informática, tenés a tu disposición una gran cantidad de recursos que te permitirán
           seguir aprendiendo.
@@ -96,39 +97,116 @@
       <main class="col-md-9 p-4">
         <!-- Contenido principal -->
         <section class="contenido-principal">
-          <article>
-            <h2>¡Bienvenidos a la Página de Informática del CPEM 7!</h2>
-            <h3>Tu viaje comienza aca</h3>
-            <p>En el CPEM 7 de Junín de los Andes, la clase de informática no es solo otra asignatura, es la puerta
-              que te abre al mundo digital. Aquí aprenderás a dominar herramientas que están transformando el mundo y
-              que serán parte esencial de tu vida, tanto profesional como personal.</p>
-            <p>Este espacio está diseñado para que tu aprendizaje sea completo y significativo. Encontrarás toda la
-              teoría, los prácticos, y los recursos necesarios para desarrollar habilidades que impactarán tu futuro.
-              No solo se trata de estudiar, sino de entender cómo cada concepto te da el poder de crear, diseñar y
-              resolver problemas.</p>
-          </article>
-
-          <article>
-            <h2>¡Vos podés ser quien cree la próxima gran innovación!</h2>
-            <h3>En esta era de la educación 3.0, nuestro objetivo es llevar la enseñanza a un nuevo nivel</h3>
-            <p>Accedé a recursos de calidad que te ayudarán a entender y dominar el desarrollo web. Cada lección,
-              práctica y proyecto está diseñado para brindarte la mejor experiencia educativa posible. Desde
-              tutoriales interactivos en plataformas como W3Schools y FreeCodeCamp, hasta cursos gratuitos y de pago
-              como los de CoderHouse, encontrarás hojas de ruta que te guiarán en tu proceso de aprendizaje.</p>
-          </article>
-
-          <article>
-            <h3>Recursos a tu alcance</h3>
-            <p>Además de los recursos digitales, también tendrás el apoyo constante de tus compañeros y de mí, el
-              profesor Julián E. Frete. Este espacio es tuyo para compartir dudas, logros y experiencias. Aquí nos
-              apoyamos mutuamente, porque creemos que el aprendizaje colaborativo es clave para el éxito.</p>
-            <h3>Únete a nuestra comunidad</h3>
-            <p>¡Comencemos! El primer paso es el más importante. Explorá los recursos disponibles, participá en
-              nuestras actividades y no dudes en pedir ayuda cuando la necesites. Juntos, haremos de este viaje una
-              experiencia inolvidable.</p>
-          </article>
-        </section>
-      </main>
+                  <h1>Introducción a CSS</h1>
+                  <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que permite a los diseñadores definir el aspecto visual de un documento HTML.</p>
+             
+                  <h2>Sintaxis y Estructura de CSS</h2>
+                  <p>CSS se escribe en una sintaxis sencilla compuesta por reglas que definen cómo deben verse los elementos HTML. Cada regla consta de un selector, una propiedad y un valor.</p>
+                  <pre>
+          <code>
+            Selector {
+            propiedad: valor;
+            }</code>
+                  </pre>
+              </section>
+          
+              <section>
+                  <h2>Ejemplo de una Regla CSS</h2>
+                  <pre>
+          <code>
+            h1 {
+            color: blue;
+            font-size: 24px;
+            }</code>
+                  </pre>
+              </section>
+          
+              <section>
+                  <h2>Conexión del archivo CSS</h2>
+                  <p>Para que el archivo CSS funcione en tu página HTML, necesitas conectarlo usando la etiqueta <code>&lt;link&gt;</code> dentro de la parte <code>&lt;head&gt;</code>:</p>
+                  <pre>
+          <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                  </pre>
+              </section>
+          
+              <section>
+                  <h2>Selectores CSS</h2>
+                  <h3>1. Selector de Elemento</h3>
+                  <pre>
+          <code>
+            p {
+            color: blue;
+            }</code>
+                  </pre>
+          
+                  <h3>2. Selector de Clase</h3>
+                  <pre>
+          <code>
+            .nombre-clase {
+            font-weight: bold;
+            }</code>
+                  </pre>
+          
+                  <h3>3. Selector de ID</h3>
+                  <pre><code>
+            #encabezado {
+            background-color: red;
+            }</code>
+                  </pre>
+          
+                  <h3>4. Selectores Combinados</h3>
+                  <pre>
+          <code>
+            h1.destacado {
+            font-size: 24px;
+            }</code>
+                  </pre>
+              </section>
+          
+              <section>
+                  <h2>Propiedades y Valores CSS</h2>
+                  <h3>Color</h3>
+                  <pre>
+          <code>
+          color: #ff0000;</code>
+                  </pre>
+          
+                  <h3>Fuente</h3>
+                  <pre><code>
+          font-family: Arial;
+          font-size: 16px;</code>
+                  </pre>
+          
+                  <h3>Espaciado</h3>
+                  <pre><code>
+          margin: 10px;
+          padding: 5px;</code>
+                  </pre>
+          
+                  <h3>Bordes</h3>
+                  <pre><code>
+          border: 2px solid #000;</code>
+                  </pre>
+              </section>
+          
+              <section>
+                  <h2>Modelo de Caja CSS</h2>
+                  <p>El modelo de caja CSS organiza los elementos en cajas con contenido, relleno, borde y margen.</p>
+              </section>
+          
+              <section>
+                  <h2>Flexbox (Explicado Fácil)</h2>
+                  <p>Flexbox te permite crear layouts flexibles y adaptables.</p>
+          
+                  <h3>Propiedades Básicas de Flexbox</h3>
+                  <pre><code>
+            .container {
+            display: flex;
+            flex-direction: row;
+            }</code>
+                  </pre>
+              </section>
+          
       <!-- Footer -->
       <footer class="text-center p-3">
         <p>Footer Section</p>
