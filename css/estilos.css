@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Breakpoints*/
+/* Reset básico de márgenes y paddings */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 
 html {
   font-size: 10px;
+  width: 100%;
 }
 
 header {
@@ -21,69 +24,77 @@ header .logo {
   margin-top: 3.5rem;
 }
 header .logo h1 {
+  font-size: 50px;
+  font-family: ope;
   margin-left: 1rem;
   color: #15ff00 !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav ul li a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+nav ul li a:hover {
+  background-color: red;
 }
 
 main {
   background-color: #ffffff;
+  display: flex;
   flex-direction: column;
 }
 main section {
+  width: 100%;
   background-color: white;
   padding: 1rem;
 }
-main section h2 {
+main section article h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-main section p {
+main section article p {
   font-size: 1rem;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
-main section li {
+main section article li {
   list-style: none;
 }
-main section ol,
-main section ul {
-  padding: 0 !important;
-  margin: 0 !important;
+main section article ol,
+main section article ul {
+  padding: 0;
+  margin: 0;
 }
-
-aside {
-  display: flex;
-  flex-direction: column;
+main aside {
+  width: 100%;
   background-color: #ffa200;
   padding: 1rem;
   color: #000000;
 }
-aside h3 {
+main aside h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
-aside ul {
-  margin: 0 !important;
-  padding: 0 !important;
+main aside ul {
+  margin: 0;
+  padding: 0;
+}
+main aside ul li {
+  margin-bottom: 0.5rem;
   list-style: none;
 }
-aside ul li {
-  margin-bottom: 0.5rem;
-}
-aside ul li a {
+main aside ul li a {
   color: white;
   display: block;
   text-decoration: none;
   text-align: center;
 }
-aside ul li a:hover {
-  text-decoration: underline;
-}
 
 pre {
   display: block;
-  background-color: #000000 !important;
+  background-color: #000000;
   padding: 10px;
   border-radius: 5px;
   overflow-x: auto;
@@ -157,25 +168,51 @@ footer p {
   }
 }
 @media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
   header {
+    height: 275px;
     background-color: red;
+    color: rgb(0, 0, 0);
   }
-  pre {
-    background-color: #000000 !important;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    color: #ffffff;
+  header .logo {
+    width: 300px;
   }
-  code {
-    background-color: #000000 !important;
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre-wrap;
-    /* Permite que las líneas largas se ajusten */
-    display: block;
-    color: greenyellow !important;
-    padding: 1rem;
+  header .logo h1 {
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
+}
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main section {
+  width: 70%;
+}
+main aside {
+  width: 30%;
+}
+
+pre {
+  background-color: #000000 !important;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+code {
+  background-color: #000000 !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem !important;
+  white-space: pre-wrap;
+  /* Permite que las líneas largas se ajusten */
+  display: block;
+  color: greenyellow !important;
 }
 
 /*# sourceMappingURL=estilos.css.map */
