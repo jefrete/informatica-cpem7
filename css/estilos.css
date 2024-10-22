@@ -102,17 +102,14 @@ aside ul li a {
 }
 
 pre {
-  display: block;
-  background-color: #000000;
-  padding: 10px;
+  width: 100% !important;
+  background-color: #000000 !important;
   border-radius: 5px;
-  overflow-x: auto;
   color: #ffffff;
 }
 
 code {
-  display: block;
-  background-color: #000000;
+  background-color: #000000 !important;
   font-family: "Courier New", Courier, monospace;
   white-space: pre-wrap;
   /* Permite que las líneas largas se ajusten */
@@ -139,17 +136,18 @@ footer {
     background-color: rgb(0, 255, 42);
     color: rgb(255, 255, 255);
     flex-direction: row-reverse;
+    justify-content: start;
     align-content: center;
-    justify-content: center;
   }
   img {
+    margin-top: 1rem;
     width: 280px;
-    margin-left: 2rem;
   }
   h1 {
-    margin-top: 0;
-    margin-left: 3rem;
-    font-size: 60px;
+    color: #000000;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 50px;
     font-weight: 700;
     font-style: italic;
   }
@@ -206,26 +204,14 @@ footer {
   }
 }
 @media (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
   header {
-    background-color: rgb(255, 247, 0);
-    color: rgb(0, 0, 0);
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-content: center;
+    background-color: rgb(255, 0, 0);
   }
-  img {
-    width: 230px;
-    margin-left: 5rem;
+  header img {
+    margin-left: 10rem;
   }
-  h1 {
-    margin-top: 0;
-    margin-left: 6rem;
-    font-size: 60px;
-    font-weight: 700;
-    font-style: italic;
+  header h1 {
+    margin-left: 10rem;
   }
   main {
     flex-direction: row-reverse;

@@ -26,36 +26,37 @@ header {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   align-items: center;
- }
-  // Estilos del logo
-  img {
-    width: 300px; // Tamaño del logo
-    padding: 1rem;
-    margin-top: 5rem;
+}
+
+// Estilos del logo
+img {
+  width: 300px; // Tamaño del logo
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+li {
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 800;
-    color: #ffffff;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+
+  a:hover {
+    background-color: red;
   }
+}
 
-  li {
-      a {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
-
-
-      a:hover {
-        background-color: red;
-      }
-    }
- 
 // Main content
 main {
   display: block;
@@ -93,7 +94,7 @@ article {
 }
 
 aside {
-  width: 100% ;
+  width: 100%;
   background-color: $secondary-color;
   padding: 1rem;
   color: #000000;
@@ -123,19 +124,14 @@ aside {
 
 
 pre {
-  display: block;
-
-  background-color: #000000;
-  padding: 10px;
+  width: 100% !important;
+  background-color: #000000 !important;
   border-radius: 5px;
-  overflow-x: auto;
   color: #ffffff;
 }
 
 code {
-  display: block;
-
-  background-color: #000000 ;
+  background-color: #000000 !important;
   font-family: "Courier New", Courier, monospace;
   white-space: pre-wrap;
   /* Permite que las líneas largas se ajusten */
@@ -162,42 +158,42 @@ footer {
 // Mixin para media queries
 @media (min-width: 768px) {
 
-
   header {
     background-color: rgb(0, 255, 42); // Color de fondo del header
     color: rgb(255, 255, 255);
     flex-direction: row-reverse;
-    
+    justify-content: start;
     align-content: center;
-    justify-content: center;
   }
-  img {
-      width: 280px;
-      margin-left: 2rem;
 
+  img {
+    margin-top: 1rem;
+    width: 280px;
   }
 
   h1 {
-      margin-top: 0;
-      margin-left: 3rem;
-      font-size: 60px;
-      font-weight: 700;
-      font-style: italic;
+    color: #000000;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
   }
-  
+
   main {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
     margin: 0 auto;
   }
+
   section {
-      width: 70%;
-      }
+    width: 70%;
+  }
 
   aside {
-      width: 30%;
-  
+    width: 30%;
+
   }
 
   #barra-nav {
@@ -238,12 +234,12 @@ footer {
   }
 
   code {
-    background-color: #000000 ;
+    background-color: #000000;
     font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap;
     /* Permite que las líneas largas se ajusten */
     display: block;
-    color: greenyellow ;
+    color: greenyellow;
     padding: 1rem;
   }
 
@@ -251,57 +247,43 @@ footer {
 
 
 @media (min-width: 1024px) {
-  
-  html {
-    font-size: 16px;
+  header{
+    background-color: rgb(255, 0, 0);
+  img{
+    margin-left: 10rem;
+  }
+  h1{
+    margin-left: 10rem;
+  }
   }
 
-  header {
-    background-color: rgb(255, 247, 0); // Color de fondo del header
-    color: rgb(0, 0, 0);
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-content: center;
-  }
-
-  img {
-      width: 230px;
-      margin-left: 5rem;
-  }
-
-  h1 {
-      margin-top: 0;
-      margin-left: 6rem;
-      font-size: 60px;
-      font-weight: 700;
-      font-style: italic;
-  }
-  
   main {
-    flex-direction: row-reverse ;
+    flex-direction: row-reverse;
   }
-  section{
-  width: 70% ;
+
+  section {
+    width: 70%;
   }
-  aside{
-  width: 30% ;
+
+  aside {
+    width: 30%;
   }
 
   pre {
-  background-color: #000000;
-  padding: 1rem;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 1rem;
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
   }
 
   code {
-  background-color: #000000;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1rem;
-  white-space: pre-wrap;
-  /* Permite que las líneas largas se ajusten */
-  display: block;
-  color: greenyellow;
+    background-color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow;
   }
 }
