@@ -11,105 +11,116 @@ $breakpoint-desktop: 992px;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
-  font-size: 10px;
+  font-size: 16px;
   width: 100%;
 }
+
 // Header
 header {
-  background-color: rgb(255, 255, 0); // Color de fondo del header
+  background-color: rgb(0, 0, 0); // Color de fondo del header
   display: flex; // Usamos flexbox para la disposición
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  align-items: center;
+ }
   // Estilos del logo
-  .logo {
-    width: 175px; // Tamaño del logo
-    padding: 2rem;
-    margin-top: 3.5rem;
-    // Estilos del título (h1) dentro del logo
-    h1 {
-      font-size: 50px;
-      font-family: ope;
-      margin-left: 1rem; // Espaciado a la izquierda del título
-      // Tamaño de fuente del título
-      color: #15ff00 !important; // Color negro (usar !important con cuidado)
-      font-family: "Open Sans", sans-serif;
-    }
+  img {
+    width: 300px; // Tamaño del logo
+    padding: 1rem;
+    margin-top: 5rem;
   }
-}
 
-nav {
-  ul {
-    li {
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  li {
       a {
         margin-left: 2rem;
         margin-right: 2rem;
       }
 
+
       a:hover {
         background-color: red;
       }
     }
-  }
-}
-
+ 
 // Main content
 main {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column ;
-  section {
-    width: 100%;
-    background-color: white;
-    padding: 1rem;
-    article {
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        line-height: 1.6;
-      }
-      li {
-        list-style: none;
-      }
-      ol,
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-    }
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+}
+
+article {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
-  aside {
-    width: 100%;
-    background-color: $secondary-color;
-    padding: 1rem;
-    color: #000000;
-    h3 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
 
-      li {
-        margin-bottom: 0.5rem;
-        list-style: none;
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
 
-        a {
-          color: white;
-          display: block;
-          text-decoration: none;
-          text-align: center;
-        }
+  li {
+    list-style: none;
+  }
+
+  ol,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+aside {
+  width: 100% ;
+  background-color: $secondary-color;
+  padding: 1rem;
+  color: #000000;
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      list-style: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }
 }
+
 
 pre {
   display: block;
@@ -124,12 +135,12 @@ pre {
 code {
   display: block;
 
-  background-color: #000000 !important;
+  background-color: #000000 ;
   font-family: "Courier New", Courier, monospace;
   white-space: pre-wrap;
   /* Permite que las líneas largas se ajusten */
   display: block;
-  color: greenyellow !important;
+  color: greenyellow;
   padding: 1rem;
 }
 
@@ -146,27 +157,47 @@ footer {
   padding: 1rem;
   text-align: center;
 
-  p {
-    margin: 0;
-  }
 }
 
 // Mixin para media queries
 @media (min-width: 768px) {
+
+
   header {
-    background-color: rgb(195, 0, 255);
+    background-color: rgb(0, 255, 42); // Color de fondo del header
+    color: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    
+    align-content: center;
+    justify-content: center;
+  }
+  img {
+      width: 280px;
+      margin-left: 2rem;
 
-    // Estilos del logo
-    .logo {
-      width: 250px; // Tamaño del logo
+  }
 
-      // Estilos del título (h1)
-      h1 {
-        margin-left: 1rem;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #000000; // Color negro (usar !important con cuidado)
+  h1 {
+      margin-top: 0;
+      margin-left: 3rem;
+      font-size: 60px;
+      font-weight: 700;
+      font-style: italic;
+  }
+  
+  main {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  section {
+      width: 70%;
       }
-    }
+
+  aside {
+      width: 30%;
+  
   }
 
   #barra-nav {
@@ -177,13 +208,29 @@ footer {
     display: block;
   }
 
-  main {
+  .nav {
+    height: 3rem;
     display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-item {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .nav-item:hover {
+    font-size: 1.3rem;
+  }
+
+  main {
     flex-direction: row-reverse;
+    display: flex;
   }
 
   pre {
-    background-color: #000000 !important;
+    background-color: #000000;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
@@ -191,68 +238,70 @@ footer {
   }
 
   code {
-    background-color: #000000 !important;
+    background-color: #000000 ;
     font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap;
     /* Permite que las líneas largas se ajusten */
     display: block;
-    color: greenyellow !important;
+    color: greenyellow ;
     padding: 1rem;
   }
 
 }
 
+
 @media (min-width: 1024px) {
+  
   html {
     font-size: 16px;
   }
 
   header {
-    height: 275px;
-    background-color: red;
+    background-color: rgb(255, 247, 0); // Color de fondo del header
     color: rgb(0, 0, 0);
-
-    .logo {
-      width: 300px;
-
-      h1 {
-        font-size: 50px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-    }
-  }
-}
-
-main {
-  display: flex;
-  flex-direction: row-reverse;
-
-  section {
-    width: 70%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
   }
 
-  aside {
-    width: 30%;
+  img {
+      width: 230px;
+      margin-left: 5rem;
   }
-}
 
-pre {
-  background-color: #000000 !important;
+  h1 {
+      margin-top: 0;
+      margin-left: 6rem;
+      font-size: 60px;
+      font-weight: 700;
+      font-style: italic;
+  }
+  
+  main {
+    flex-direction: row-reverse ;
+  }
+  section{
+  width: 70% ;
+  }
+  aside{
+  width: 30% ;
+  }
+
+  pre {
+  background-color: #000000;
   padding: 1rem;
   border-radius: 5px;
   color: #ffffff;
   font-size: 1rem;
+  }
 
-}
-
-code {
-  background-color: #000000 !important;
+  code {
+  background-color: #000000;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1rem !important;
+  font-size: 1rem;
   white-space: pre-wrap;
   /* Permite que las líneas largas se ajusten */
   display: block;
-  color: greenyellow !important;
+  color: greenyellow;
+  }
 }
