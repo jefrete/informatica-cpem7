@@ -1,0 +1,68 @@
+// Header
+header {
+    background-color: rgb(255, 225, 0); // Color de fondo del header
+    display: flex; // Usamos flexbox para la disposición
+    flex-direction: column-reverse;
+    color: black;
+    font-size: 50px !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    align-items: center;
+    background-image: url(../assets/Designer\ \(58\).jpeg);
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el área del header */
+    background-position: center;
+    /* Centra la imagen en el header */
+    @extend .shadow; // Se reutiliza la clase .shadow
+
+    // Estilos del logo
+    img {
+        width: 300px; // Tamaño del logo
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    // Estilos del h1
+    h1 {
+        text-align: center;
+        font-size: 50px !important;
+        font-style: italic;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+}
+
+// Ahora usamos el mixin para aplicar estilos para pantallas pequeñas
+@include respond-to(md) {
+    header {
+        background-color: rgb(0, 255, 42); // Color de fondo del header
+        color: rgb(255, 255, 255);
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-content: center;
+    }
+
+}
+
+// Y también para pantallas medianas
+@include respond-to(lg) {
+    header {
+        background-color: rgb(0, 255, 42); // Color de fondo del header
+        color: rgb(255, 255, 255);
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-content: center;
+    }
+
+    img {
+        margin-left: 10rem;
+    }
+
+    h1 {
+        font-size: 50px !important;
+        margin-left: 10rem;
+    }
+
+}

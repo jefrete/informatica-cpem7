@@ -1,0 +1,16 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: 576px) {
+        @content; // Aquí se pone lo que queremos que pase en pantallas pequeñas
+      }
+    } @else if $breakpoint == md {
+      @media (min-width: 577px) and (max-width: 768px) {
+        @content; // Aquí para pantallas medianas
+      }
+    } @else if $breakpoint == lg {
+      @media (min-width: 769px) {
+        @content; // Aquí para pantallas grandes
+      }
+    }
+  }
+  
