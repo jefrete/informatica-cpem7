@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* Breakpoints*/
+header {
+  background-color: rgb(255, 225, 0);
+  display: flex;
+  flex-direction: column-reverse;
+  color: black;
+  font-size: 50px !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  align-items: center;
+  background-image: url(../assets/Designer\ \(58\).jpeg);
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el área del header */
+  background-position: center;
+  /* Centra la imagen en el header */
+}
+header img {
+  width: 300px;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+header h1 {
+  text-align: center;
+  font-size: 50px !important;
+  font-style: italic;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Cuando se hace hover */
+.cuadrado:hover {
+  transform: translateX(100px) scale(1.5) rotate(45deg);
+  transition: background-color 2s ease; /* La transición que cambia el fondo */
+}
+
+.cuadrado {
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  font-family: arial;
+  font-weight: 700;
+  font-size: 50px;
+  background-color: red;
+  color: white;
+  transition: transform 1s ease;
+  text-align: center;
+}
+
+/* Cuando se hace hover */
+.cuadrado:hover {
+  transform: translateX(100px) scale(1.5);
+  transition: transform 2s ease;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reset básico de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
+}
+
+.shadow, aside, header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  background-color: red;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 2s ease;
+  /* La transición que cambia el fondo */
+}
+
+h2:hover {
+  background-color: red;
+  color: white;
+  /* Cambia de color al hacer hover */
+}
+
+li a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+li a:hover {
+  background-color: red;
+}
+
+main {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+}
+
+article {
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside {
+  width: 100%;
+  background-color: #ffa200;
+  padding: 1rem;
+  color: #000000;
+}
+aside h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+aside ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+pre {
+  width: 100% !important;
+  background-color: #000000 !important;
+  border-radius: 5px;
+  color: yellow;
+}
+
+code {
+  background-color: #000000 !important;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  /* Permite que las líneas largas se ajusten */
+  display: block;
+  color: greenyellow !important;
+  padding: 1rem;
+}
+
+.social-links img {
+  width: 20px;
+}
+
+footer {
+  background-color: #f0e5e5;
+  border-top: 2px solid black;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 300px;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* Espacio interno del footer */
+}
+
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(0, 255, 42);
+    color: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-content: center;
+  }
+  img {
+    margin-top: 1rem;
+    width: 280px;
+  }
+  h1 {
+    font-size: 50px;
+    color: #000000;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+  main {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  section {
+    width: 70%;
+  }
+  aside {
+    width: 30%;
+  }
+  #barra-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+  .nav {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  .nav-item {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .nav-item:hover {
+    font-size: 1.3rem;
+  }
+  main {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  pre {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+  code {
+    background-color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    background-color: rgb(208, 255, 0);
+  }
+  header img {
+    margin-left: 10rem;
+  }
+  header h1 {
+    font-size: 50px !important;
+    margin-left: 10rem;
+  }
+  main {
+    flex-direction: row-reverse;
+  }
+  section {
+    width: 70%;
+  }
+  aside {
+    width: 30%;
+  }
+  pre {
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  code {
+    background-color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    display: block;
+    color: greenyellow;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
