@@ -132,6 +132,11 @@ h2:hover {
   /* Cambia de color al hacer hover */
 }
 
+nav {
+  width: 100%;
+  display: block;
+}
+
 li a {
   margin-left: 2rem;
   margin-right: 2rem;
