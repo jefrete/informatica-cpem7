@@ -1,0 +1,26 @@
+
+/* Cuando se hace hover */
+.cuadrado:hover {
+    transform: translateX(100px) scale(1.5) rotate(45deg);
+    transition: background-color 2s ease; /* La transición que cambia el fondo */
+  }
+  .cuadrado {
+    width: 300px;
+    height: 300px;
+    padding:15px;
+    font-family:arial;
+    font-weight: 700;
+    font-size: 50px;
+    background-color: red;
+    color: white;
+    transition: transform 1s ease;
+    text-align: center;
+  }
+  /* Cuando se hace hover */
+  .cuadrado:hover {
+    transform: translateX(100px) scale(1.5);
+    transition: transform 2s ease;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
