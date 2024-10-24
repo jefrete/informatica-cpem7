@@ -7,31 +7,29 @@ header {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     align-items: center;
-    background-image: url(../../assets/fondo-pizarron.png);
+    background-image: url(../../assets/Designer\ \(57\).jpeg);
     background-color: orangered;
     background-size: cover;
     /* Ajusta la imagen para cubrir todo el área del header */
     background-position: center;
     /* Centra la imagen en el header */
     @extend .shadow; // Se reutiliza la clase .shadow
-
+    h1 {
+        text-align: center;
+        font-size: 50px !important;
+        font-style: italic;
+        font-weight: 800;
+        color: #000000;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
     // Estilos del logo
     img {
         width: 300px; // Tamaño del logo
         padding: 1rem;
         margin-top: 5rem;
     }
-
-    // Estilos del h1
-    h1 {
-        text-align: center;
-        font-size: 50px !important;
-        font-style: italic;
-        font-weight: 800;
-        color: #ffffff;
-        letter-spacing: 2px;
-        margin-bottom: 1rem;
-    }
+    
 }
 
 // Ahora usamos el mixin para aplicar estilos para pantallas pequeñas
