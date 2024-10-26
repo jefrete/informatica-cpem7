@@ -1,76 +1,72 @@
 // Header
 header {
-    background-image: url('/assets/Designer2.png') ;
-    background-position: center;
-    display: flex; // Usamos flexbox para la disposición
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
+  background-color: #c8ff00;
+  display: flex; // Usamos flexbox para la disposición
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 
-    h1 {
-        text-align: center;
-        font-size: 35px !important;
-        font-style: italic;
-        font-weight: 700;
-        color: #000000;
-        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-        letter-spacing: 2px;
-    }
+  h1 {
+    text-align: center;
+    font-size: 35px !important;
+    font-style: italic;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    letter-spacing: 2px;
+  }
 
-    // Estilos del logo
-    img {
-        max-width: 100%;
-        /* Cambiar a max-width para que sea responsivo */
-        width: 250px; // Tamaño del logo
-        padding: 1rem;
-        height: auto; /* Para mantener la proporción */
-
-    }
+  // Estilos del logo
+  img {
+    max-width: 100%;
+    /* Cambiar a max-width para que sea responsivo */
+    width: 250px; // Tamaño del logo
+    padding: 1rem;
+    height: auto; /* Para mantener la proporción */
+  }
 }
 
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
-    header {
-        height: 275px;
-        flex-direction: row-reverse;
+  header {
+    height: 275px;
+    flex-direction: row-reverse;
 
-        justify-content: start;
-        align-content: center;
+    justify-content: start;
+    align-content: center;
 
-        img {
-            width: 300px; // Tamaño del logo
-            margin-left: 1rem;
-        }
-
-        h1 {
-            font-size: 45px !important;
-
-            font-weight: 700;
-            color: #000000;
-            text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-
-        }
+    img {
+      width: 300px; // Tamaño del logo
+      margin-left: 1rem;
     }
+
+    h1 {
+      font-size: 45px !important;
+
+      font-weight: 700;
+      color: #000000;
+      text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    }
+  }
 }
 
 // Estilos para pantallas medianas
 @include respond-to(lg) {
-    header {
-        height: 275px;
-        flex-direction: row-reverse;
-        justify-content: start;
-        align-content: center;
+  header {
+    background-color: #c8ff00;
+    height: 275px;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-content: center;
 
-
-        img{
-            width: 300px; // Tamaño del logo
-
-        }
-        h1 {
-            font-size: 60px !important;
-            font-weight: 700;
-            color: #000000;
-            text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-        }
+    img {
+      width: 300px; // Tamaño del logo
     }
+    h1 {
+      font-size: 60px !important;
+      font-weight: 700;
+      color: #000000;
+      text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    }
+  }
 }
