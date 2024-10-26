@@ -1,6 +1,7 @@
 // Header
 header {
-    background-color: #d9ff00;
+    background-image: url(../../assets/Designer\ \(58\).jpeg) ;
+    background-position: center;
     display: flex; // Usamos flexbox para la disposición
     flex-direction: column-reverse;
     align-items: center;
@@ -29,7 +30,6 @@ header {
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
     header {
-        background-color: rgb(0, 255, 234);
         flex-direction: row-reverse;
 
         justify-content: start;
@@ -48,7 +48,6 @@ header {
 // Estilos para pantallas medianas
 @include respond-to(lg) {
     header {
-        background-color: red;
         flex-direction: row-reverse;
         color: rgb(255, 255, 255);
         justify-content: start;
