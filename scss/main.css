@@ -20,6 +20,7 @@ header img {
   /* Cambiar a max-width para que sea responsivo */
   width: 200px;
   padding: 1rem;
+  height: auto; /* Para mantener la proporción */
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -99,9 +100,10 @@ footer {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
+html, body {
   width: 100%;
+  font-size: 16px;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 .shadow, aside {

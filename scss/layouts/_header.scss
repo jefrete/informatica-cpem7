@@ -21,6 +21,8 @@ header {
         /* Cambiar a max-width para que sea responsivo */
         width: 200px; // Tamaño del logo
         padding: 1rem;
+        height: auto; /* Para mantener la proporción */
+
     }
 }
 
