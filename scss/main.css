@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Breakpoints*/
 header {
   background-color: #d9ff00;
   display: flex;
@@ -93,7 +92,6 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Reset básico de márgenes y paddings */
 * {
   margin: 0;
   padding: 0;
@@ -106,14 +104,17 @@ html, body {
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-header, footer, main {
-  max-width: 100%; /* Asegúrate de que no se desborde */
+h1, h2, h3, p {
+  overflow-wrap: break-word; /* Permite que las palabras largas se dividan */
 }
 
-h2 {
+header, footer, main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header h2, footer h2, main h2 {
   background-color: black;
   color: white;
-  padding: 10px 20px;
   border: none;
   font-size: 18px;
   cursor: pointer;
@@ -201,10 +202,6 @@ code {
   padding: 1rem;
 }
 
-.social-links img {
-  width: 20px;
-}
-
 @media (min-width: 768px) {
   main {
     display: flex;
@@ -231,7 +228,6 @@ code {
     font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap;
     /* Permite que las líneas largas se ajusten */
-    display: block;
     color: greenyellow;
     padding: 1rem;
   }
@@ -259,7 +255,6 @@ code {
     font-size: 1rem;
     white-space: pre-wrap;
     /* Permite que las líneas largas se ajusten */
-    display: block;
     color: greenyellow;
   }
 }
