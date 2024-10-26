@@ -1,8 +1,8 @@
 // main.scss
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'base/reset';
-@import 'base/typography';
+//@import 'base/reset';
+//@import 'base/typography';
 //@import 'components/buttons';
 //@import 'components/cards';
 @import 'layouts/header';
@@ -48,42 +48,20 @@ h2:hover {
     /* Cambia de color al hacer hover */
 }
 
-nav {
-    width: 100% !important;
-}
-.navbar{
-    background-color: #000000;
-}
-li {
-    a {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    a:hover {
-        background-color: red;
-    }
-}
-
 // Main content
 main {
     flex-wrap: wrap;
     flex-direction: column;
-
     section {
-        width: 100%;
         background-color: white;
         padding: 1rem;
-
         article {
-            border-radius: 4px;
+        border-radius: 4px;
         }
     }
 }
 
 article {
-    border-radius: 4px;
-
     h2 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -111,7 +89,6 @@ aside {
     background-color: $secondary-color;
     padding: 1rem;
     color: #000000;
-    @extend .shadow; // Se reutiliza la clase .shadow
 
     h3 {
         font-size: 1.2rem;
@@ -137,19 +114,19 @@ aside {
 }
 
 pre {
-    width: 100% !important;
-    background-color: #000000 !important;
+    width: 100% ;
+    background-color: #000000;
     border-radius: 5px;
     color: yellow;
 }
 
 code {
-    background-color: #000000 !important;
+    background-color: #000000 ;
     font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap;
     /* Permite que las líneas largas se ajusten */
     display: block;
-    color: greenyellow !important;
+    color: greenyellow ;
     padding: 1rem;
 }
 
@@ -159,31 +136,6 @@ code {
 
 // Mixin para media queries
 @media (min-width: 768px) {
-
-    //nav
-    #barra-nav {
-        display: none;
-    }
-
-    #desktop-nav {
-        display: block;
-    }
-
-    .nav {
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-
-    .nav-item {
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-
-    .nav-item:hover {
-        font-size: 1.3rem;
-    }
 
     //main
     main {
