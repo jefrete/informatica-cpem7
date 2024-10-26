@@ -3,7 +3,6 @@
 @include respond-to(md) {
     nav {
         display: none !important;
-        background-color: brown !important; 
         flex-direction: row-reverse;
     }
 }
@@ -38,9 +37,7 @@
             a{
                 font-size: 25px !important;
 
-            }
-            a:hover {
-            }
+            }            
         
         }
         li:hover {
