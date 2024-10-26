@@ -48,6 +48,54 @@ header img {
     font-size: 60px !important;
   }
 }
+@media (min-width: 577px) and (max-width: 768px) {
+  nav {
+    display: none !important;
+    background-color: brown !important;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 769px) {
+  nav {
+    display: none !important;
+    background-color: brown !important;
+    flex-direction: row-reverse;
+  }
+}
+.navbar a {
+  font-size: 25px !important;
+  color: white;
+}
+
+.nav-desktop {
+  background-color: #212529;
+  color: white;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-desktop ul {
+  display: flex;
+}
+.nav-desktop ul li {
+  padding: 0px 2rem;
+}
+.nav-desktop ul li a {
+  font-size: 25px !important;
+}
+.nav-desktop ul li:hover {
+  background-color: red;
+  border-radius: 6px;
+  scale: 1.2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+@media (max-width: 576px) {
+  .nav-desktop {
+    display: none !important;
+  }
+}
 footer {
   background-color: #f0e5e5;
   border-top: 2px solid black;

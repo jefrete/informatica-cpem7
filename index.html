@@ -1,137 +1,282 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Informatica - Cpem 7 - Junin de los Andes</title>
 
-  <title>Informatica - Cpem 7 - Junin de los Andes</title>
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-icons@latest/simple-icons.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@latest/simple-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
 
-  <link rel="stylesheet" href="scss/main.css">
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="animate__animated animate__slideInRight">
+        INFORMATICA<br />CPEM 7
+      </h1>
+      <img src="assets/logo9.png" alt="Logo de la escuela de desarrollo web" />
+    </header>
 
-</head>
+    <!-- dsfsdfdsfdsfsdfs  nav  dfdsfsdfsdfsdfsd -->
 
-<body>
-  <!-- Header -->
-  <header>
-        <h1 class="animate__animated animate__slideInRight ">INFORMATICA<br>CPEM 7</h1>
-    <img src="assets/logo9.png" alt="Logo de la escuela de desarrollo web">
-  </header>
-  
-  
-  <main>
-    <section>
-      <article>
-        <h2>¡Bienvenidos a la Página de Informática del CPEM 7!</h2>
-        <h3>Tu viaje comienza aca</h3>
-        <p>En el CPEM 7 de Junín de los Andes, la clase de informática no es solo otra asignatura, es la puerta que te
-          abre al mundo digital. Aquí aprenderás a dominar herramientas que están transformando el mundo y
-          que serán parte esencial de tu vida.</p>
-        <p>Este espacio está diseñado para que tu aprendizaje sea completo.
-          Encontrarás la teoría, ejercicios prácticos, y los recursos necesarios para desarrollar nuevas habilidades.
-        </p>
+    <!-- nav burguer -->
 
-        <h2>¡Vos podés ser quien cree la próxima gran innovación!</h2>
-        <h3>En esta era de la educación 3.0, nuestro objetivo es llevar la enseñanza a un nuevo nivel</h3>
-        <p>Accedé a recursos de calidad que te ayudarán a entender y dominar el desarrollo web. Desde tutoriales
-          interactivos en plataformas como W3Schools y FreeCodeCamp, hasta cursos gratuitos y de pago
-          como los de CoderHouse, encontrarás hojas de ruta que te guiarán en tu proceso de aprendizaje.</p>
-        <h3>Recursos a tu alcance</h3>
-        <p>Además de los recursos digitales, también tendrás el apoyo constante de tus compañeros y los profesores.
-          Este espacio es para compartir dudas, logros y experiencias.</p>
-        <h3>Únite a nuestra comunidad</h3>
-        <p>¡Comencemos! Explorá los recursos disponibles, participá en
-          nuestras actividades y no dudes en pedir ayuda cuando la necesites.
-        </p>
-      </article>
-     <!--       <div class="cuadrado">"Tu mente es tu único límite"</div>
--->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MENU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >-Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="html/html.html"
+                  >-Html</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="html/css.html"
+                  >-Css</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    </section>
+    <!-- nav dektop -->
+    <div class="nav-desktop">    
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="html/html.html"
+            >Html</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="html/css.html"
+            >Css</a
+          >
+        </li>
+      </ul>
+    </div>
 
-    <aside>
-      <article>
-        <h3>Expande tus conocimientos</h3>
-        <p>Aparte de este taller, tenés a tu disposición una gran cantidad de recursos gratis que te permitirán seguir
-          aprendiendo.
-        </p>
-        <span>
-          <p style="font-size: 1.5rem; font-style: italic; font-weight: bold;line-height: normal;">Aprende desarrollo
-            web en <a href="https://www.w3schools.com/">W3Schools</a>, la plataforma líder con tutoriales interactivos
-            en HTML, CSS, JavaScript y más. Mejora tus habilidades con contenido práctico y certificaciones reconocidas.
+    <main>
+      <section>
+        <article>
+          <h2>¡Bienvenidos a la Página de Informática del CPEM 7!</h2>
+          <h3>Tu viaje comienza aca</h3>
+          <p>
+            En el CPEM 7 de Junín de los Andes, la clase de informática no es
+            solo otra asignatura, es la puerta que te abre al mundo digital.
+            Aquí aprenderás a dominar herramientas que están transformando el
+            mundo y que serán parte esencial de tu vida.
           </p>
-        </span>
-        <p>Podés complementar lo que ves en clase con la documentación oficial de las principales tecnologías:</p>
-        <ul>
-          <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a><br>La guía oficial de Mozilla
-            para HTML, CSS, y JavaScript.</li>
-          <li><a href="https://www.w3.org/TR/html52/" target="_blank">W3C HTML5 Specification</a><br>Documentación
-            oficial del la W3C.</li>
-          <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
-              target="_blank">ECMAScript(JavaScript) Specification</a><br>Documentacion oficial de JavaScript.</li>
-        </ul>
-        <br>
-        <p>Una vez que completes los conocimientos básicos de este curso, estarás preparado para dar el siguiente paso
-          en tu formación. Podés explorar otras instancias de aprendizaje con cursos pagos o bootcamps que te ayudarán a
-          profundizar en desarrollo web y programación:</p>
+          <p>
+            Este espacio está diseñado para que tu aprendizaje sea completo.
+            Encontrarás la teoría, ejercicios prácticos, y los recursos
+            necesarios para desarrollar nuevas habilidades.
+          </p>
 
-        <h3>Cursos Pagos y Bootcamps Recomendados:</h3>
-        <ul>
-          <li>
-            <a href="https://www.coderhouse.com/" target="_blank">CoderHouse</a><br>Ofrecen cursos de desarrollo web y
-            programación orientados a proyectos prácticos.
-          </li>
+          <h2>¡Vos podés ser quien cree la próxima gran innovación!</h2>
+          <h3>
+            En esta era de la educación 3.0, nuestro objetivo es llevar la
+            enseñanza a un nuevo nivel
+          </h3>
+          <p>
+            Accedé a recursos de calidad que te ayudarán a entender y dominar el
+            desarrollo web. Desde tutoriales interactivos en plataformas como
+            W3Schools y FreeCodeCamp, hasta cursos gratuitos y de pago como los
+            de CoderHouse, encontrarás hojas de ruta que te guiarán en tu
+            proceso de aprendizaje.
+          </p>
+          <h3>Recursos a tu alcance</h3>
+          <p>
+            Además de los recursos digitales, también tendrás el apoyo constante
+            de tus compañeros y los profesores. Este espacio es para compartir
+            dudas, logros y experiencias.
+          </p>
+          <h3>Únite a nuestra comunidad</h3>
+          <p>
+            ¡Comencemos! Explorá los recursos disponibles, participá en nuestras
+            actividades y no dudes en pedir ayuda cuando la necesites.
+          </p>
+        </article>
+        <!--       <div class="cuadrado">"Tu mente es tu único límite"</div>
+-->
+      </section>
 
-        </ul>
-        <br>
+      <aside>
+        <article>
+          <h3>Expande tus conocimientos</h3>
+          <p>
+            Aparte de este taller, tenés a tu disposición una gran cantidad de
+            recursos gratis que te permitirán seguir aprendiendo.
+          </p>
+          <span>
+            <p
+              style="
+                font-size: 1.5rem;
+                font-style: italic;
+                font-weight: bold;
+                line-height: normal;
+              "
+            >
+              Aprende desarrollo web en
+              <a href="https://www.w3schools.com/">W3Schools</a>, la plataforma
+              líder con tutoriales interactivos en HTML, CSS, JavaScript y más.
+              Mejora tus habilidades con contenido práctico y certificaciones
+              reconocidas.
+            </p>
+          </span>
+          <p>
+            Podés complementar lo que ves en clase con la documentación oficial
+            de las principales tecnologías:
+          </p>
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/es/" target="_blank"
+                >MDN Web Docs</a
+              ><br />La guía oficial de Mozilla para HTML, CSS, y JavaScript.
+            </li>
+            <li>
+              <a href="https://www.w3.org/TR/html52/" target="_blank"
+                >W3C HTML5 Specification</a
+              ><br />Documentación oficial del la W3C.
+            </li>
+            <li>
+              <a
+                href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+                target="_blank"
+                >ECMAScript(JavaScript) Specification</a
+              ><br />Documentacion oficial de JavaScript.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Una vez que completes los conocimientos básicos de este curso,
+            estarás preparado para dar el siguiente paso en tu formación. Podés
+            explorar otras instancias de aprendizaje con cursos pagos o
+            bootcamps que te ayudarán a profundizar en desarrollo web y
+            programación:
+          </p>
 
-        <p>Para los que buscan opciones gratuitas, plataformas como <a href="https://www.freecodecamp.org/"
-            style="color:white" target="_blank">FreeCodeCamp</a> ofrecen una amplia variedad de tutoriales interactivos
-          para aprender a programar desde cero, con proyectos que te permiten aplicar lo aprendido.</p>
-        <p>Explorá estas opciones y elegí la que mejor se ajuste a tus necesidades. ¡Tu futuro en la tecnología empieza
-          aquí!</p>
-      </article>
-    </aside>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
-    <a href="https://www.facebook.com" target="_blank">
+          <h3>Cursos Pagos y Bootcamps Recomendados:</h3>
+          <ul>
+            <li>
+              <a href="https://www.coderhouse.com/" target="_blank"
+                >CoderHouse</a
+              ><br />Ofrecen cursos de desarrollo web y programación orientados
+              a proyectos prácticos.
+            </li>
+          </ul>
+          <br />
+
+          <p>
+            Para los que buscan opciones gratuitas, plataformas como
+            <a
+              href="https://www.freecodecamp.org/"
+              style="color: white"
+              target="_blank"
+              >FreeCodeCamp</a
+            >
+            ofrecen una amplia variedad de tutoriales interactivos para aprender
+            a programar desde cero, con proyectos que te permiten aplicar lo
+            aprendido.
+          </p>
+          <p>
+            Explorá estas opciones y elegí la que mejor se ajuste a tus
+            necesidades. ¡Tu futuro en la tecnología empieza aquí!
+          </p>
+        </article>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+      <a href="https://www.facebook.com" target="_blank">
         <i class="si si-facebook icon"></i>
-    </a>
-    <a href="https://twitter.com" target="_blank">
+      </a>
+      <a href="https://twitter.com" target="_blank">
         <i class="si si-twitter icon"></i>
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
         <i class="si si-instagram icon"></i>
-    </a>
-    <a href="https://www.linkedin.com" target="_blank">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
         <i class="si si-linkedin icon"></i>
-    </a>
-    <a href="https://github.com" target="_blank">
+      </a>
+      <a href="https://github.com" target="_blank">
         <i class="si si-github icon"></i>
-    </a>
-    <a href="https://www.youtube.com" target="_blank">
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
         <i class="si si-youtube icon"></i>
-    </a>
-</footer>
+      </a>
+    </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

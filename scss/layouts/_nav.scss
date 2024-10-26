@@ -1,0 +1,59 @@
+
+// Estilos para pantallas pequeñas
+@include respond-to(md) {
+    nav {
+        display: none !important;
+        background-color: brown !important; 
+        flex-direction: row-reverse;
+    }
+}
+
+// Estilos para pantallas medianas
+@include respond-to(lg) {
+    nav {
+        display: none !important;
+        background-color: brown !important; 
+        flex-direction: row-reverse;
+    
+    }
+}
+
+
+.navbar a {
+    font-size: 25px !important;
+    color:white;
+}
+
+.nav-desktop{
+    background-color: #212529;
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            padding: 0px 2rem;
+            a{
+                font-size: 25px !important;
+
+            }
+            a:hover {
+            }
+        
+        }
+        li:hover {
+            background-color: red;
+            border-radius: 6px;
+            scale: 1.2;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+        }
+    }
+}
+
+@include respond-to(sm) {
+    .nav-desktop {
+        display: none !important;
+    }
+}
