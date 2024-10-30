@@ -5,7 +5,7 @@ header {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/Designer1.jpg);
+  background-image: url(../../assets/Designer1.jpg);
 }
 header h1 {
   text-align: center;
