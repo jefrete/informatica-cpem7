@@ -1,4 +1,8 @@
 
+.nav-desktop {
+    background-color: #000000 !important;
+}
+
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
     nav {
