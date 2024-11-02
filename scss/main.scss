@@ -1,236 +1,311 @@
 // main.scss
-@import 'utils/variables';
-@import 'utils/mixins';
+@import "utils/variables";
+@import "utils/mixins";
 //@import 'base/reset';
 //@import 'base/typography';
 //@import 'components/buttons';
 //@import 'components/cards';
-@import 'layouts/header';
-@import 'layouts/nav';
-@import 'layouts/footer';
+@import "layouts/header";
+@import "layouts/nav";
+@import "layouts/footer";
 //@import 'pages/home';
 //@import 'pages/about';
-@import 'layouts/cubo';
+@import "layouts/cubo";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
-html, body,header,nav,main,footer {
-    width: 100%;
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-    max-width: 100%; 
+
+html,
+body,
+header,
+nav,
+main,
+footer {
+  width: 100%;
+  overflow-x: hidden;
+  /* Evita el desbordamiento horizontal */
+  max-width: 100%;
 }
+
 h2 {
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight:bold;
-    transition: background-color 2s ease;
-    /* La transición que cambia el fondo */
-} 
-h2:hover {
-    background-color: red;
-    color: white;
-    /* Cambia de color al hacer hover */
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 2s ease;
+  /* La transición que cambia el fondo */
 }
+
+h2:hover {
+  background-color: red;
+  color: white;
+  /* Cambia de color al hacer hover */
+}
+
 // Main content
 main {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+
+  section {
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(255, 149, 0, 1) 0%,
+      rgba(186, 37, 231, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(255, 149, 0, 1) 0%,
+      rgba(186, 37, 231, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+    background: -o-linear-gradient(
+      90deg,
+      rgba(255, 149, 0, 1) 0%,
+      rgba(186, 37, 231, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(255, 149, 0, 1) 0%,
+      rgba(186, 37, 231, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+
+    //   background-color: white;
+    display: flex;
     flex-direction: column;
-    section {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        //padding: 1rem;
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0;
-            margin-top: 1rem;
-            display: block;
-            font-family:Arial, Helvetica, sans-serif;
-            padding: 2rem;
+    text-align: center;
 
-            //font-family:Verdana, Geneva, Tahoma, sans-serif;
-            //font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            letter-spacing: 5px;
-            font-weight: bold;
-            color: yellow;
-        }
-        article {
-           
-        border-radius: 4px;
-        padding: 1rem;
-    
-        }
-        iframe {
-            width: 100%;
-        }
-    }
-}
-
-article {
+    //padding: 1rem;
     h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      margin-top: 1rem;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 2rem;
+      //font-family:Verdana, Geneva, Tahoma, sans-serif;
+      //font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      letter-spacing: 5px;
+      font-weight: bold;
+      color: yellow;
+      text-align: center;
+
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+
+    article {
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 1rem;
+      font-family: "Oswald", serif !important;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      text-align: center;
+
+      ol {
+        text-align: center;
+        li {
+            list-style: none;
+          a {
+            text-decoration: none;
+            color: yellow;
+          }
+        }
+      }
+
+      h2 {
         font-size: 2rem;
         margin-bottom: 0;
-    }
 
-    p {
-        font-size: 1rem;
-        line-height: 1.6;
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: black;
+        }
+      }
     }
+  }
+
+  iframe {
+    width: 100%;
+  }
+
 }
 
-li {
-    list-style: none;
+#white {
+    height: 170px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h3 {
+      color: #000000;
+      font-weight: bold;
+      font-style: italic;
+    }
 }
 
 ol,
 ul {
     padding: 0;
     margin: 0;
-}
+  }
 
 aside {
-    width: 100%;
-    background-color: $secondary-color;
-    padding: 1rem;
-    color: #000000;
+  width: 100%;
+  background-color: $secondary-color;
+  padding: 1rem;
+  color: #000000;
 
-    h3 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      list-style: none;
+
+      a {
+        color: white;
+        text-decoration: none;
         text-align: center;
+      }
     }
-
-    ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-            margin-bottom: 0.5rem;
-            list-style: none;
-
-            a {
-                color: white;
-                text-decoration: none;
-                text-align: center;
-            }
-        }
-    }
+  }
 }
 
 pre {
-    width: 100% ;
-    background-color: #000000;
-    border-radius: 5px;
-    color: yellow;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 5px;
+  color: yellow;
 }
 
 code {
-    background-color: #000000 ;
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre-wrap;
-    /* Permite que las líneas largas se ajusten */
-    display: block;
-    color: greenyellow ;
-    padding: 1rem;
+  background-color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  /* Permite que las líneas largas se ajusten */
+  display: block;
+  color: greenyellow;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
+  //main
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
 
-    //main
-    main {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        justify-content: space-around;
-        margin: 0 auto;
-        section {
-            width: 70%;
-            font-size: 2rem;
-            article {
-            font-size: 2rem;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 400;    
-            }
-        }
-        aside {
-            
-            width: 30%;
-            font-size: 2rem;
-            font-family: Arial, Helvetica, sans-serif;
-            h2{
-                font-size: 3rem !important;
-            }
-            h3{
-                font-size: 2rem !important;
-                font-weight: bold;
-                color: rgb(255, 255, 255);
+    section {
+      width: 70%;
+      font-size: 2rem;
 
-            }
-            article{
-                text-align: center;
-                font-size: 1.5rem !important;
-
-            }
-        }
+      article {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
     }
 
-    pre {
-        background-color: #000000;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-        color: #ffffff;
-    }
+    aside {
+      width: 30%;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
 
-    code {
-        background-color: #000000;
-        font-family: "Courier New", Courier, monospace;
-        white-space: pre-wrap;
-        /* Permite que las líneas largas se ajusten */
-        color: greenyellow;
-        padding: 1rem;
-    }
+      h2 {
+        font-size: 3rem !important;
+      }
 
+      h3 {
+        font-size: 2rem !important;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+      }
+
+      article {
+        text-align: center;
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  pre {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+
+  code {
+    background-color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    color: greenyellow;
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  main {
+    flex-direction: row-reverse;
 
-    main {
-        flex-direction: row-reverse;
-    
-        section {
-            width: 70%;
-            text-align: left;
-        }
+    section {
+      width: 70%;
+      text-align: left;
     }
-    aside {
-        width: 25%;
-    }
+  }
 
-    pre {
-        background-color: #000000;
-        padding: 1rem;
-        border-radius: 5px;
-        color: #ffffff;
-        font-size: 1rem;
-    }
+  aside {
+    width: 25%;
+  }
 
-    code {
-        background-color: #000000;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 1rem;
-        white-space: pre-wrap;
-        /* Permite que las líneas largas se ajusten */
-        color: greenyellow;
-    }
+  pre {
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  code {
+    background-color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    /* Permite que las líneas largas se ajusten */
+    color: greenyellow;
+  }
 }

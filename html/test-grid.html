@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Web Responsive con Grid Areas</title>
+
+    <link rel="stylesheet" href="../scss/main.css" />
+
+    <style>
+      /* Configuración básica y estilos generales */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Estilos de la cuadrícula */
+      .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 20px;
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "aside"
+          "footer";
+      }
+
+      /* Asignar estilos a cada área */
+      header {
+        height: 450px;
+        grid-area: header;
+        background-image: url(../assets/banner-cpem.png);
+        background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        grid-area: nav;
+        background-color: #000000;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      main {
+        grid-area: main;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      aside {
+        grid-area: aside;
+        background-color: #ff5722;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+      footer {
+        grid-area: footer;
+        background-color: #333;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      /* Media Query para pantallas más anchas (tablets o desktops) */
+      @media (min-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr 3fr 1fr;
+          grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        }
+      }
+
+      /* Media Query para pantallas muy anchas (desktops grandes) */
+      @media (min-width: 1024px) {
+        .grid-container {
+          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>Encabezado</header>
+      <nav>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >-Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="html/html.html"
+              >-Html</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="html/css.html"
+              >-Css</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="html/github.html"
+              >-Github</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="html/contacto.html"
+              >-Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>Contenido Principal</main>
+      <aside>Contenido Secundario</aside>
+      <footer>Pie de Página</footer>
+    </div>
+  </body>
+</html>

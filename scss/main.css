@@ -58,6 +58,10 @@ header img {
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
   }
 }
+li {
+  list-style: none;
+}
+
 .nav-desktop {
   background-color: #000000 !important;
 }
@@ -229,9 +233,15 @@ html {
   font-size: 16px;
 }
 
-html, body, header, nav, main, footer {
+html,
+body,
+header,
+nav,
+main,
+footer {
   width: 100%;
-  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  overflow-x: hidden;
+  /* Evita el desbordamiento horizontal */
   max-width: 100%;
 }
 
@@ -254,9 +264,13 @@ h2:hover {
 main {
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
 }
 main section {
-  background-color: white;
+  background: -webkit-linear-gradient(90deg, rgb(255, 149, 0) 0%, rgb(186, 37, 231) 0%, rgb(0, 241, 255) 100%);
+  background: -moz-linear-gradient(90deg, rgb(255, 149, 0) 0%, rgb(186, 37, 231) 0%, rgb(0, 241, 255) 100%);
+  background: -o-linear-gradient(90deg, rgb(255, 149, 0) 0%, rgb(186, 37, 231) 0%, rgb(0, 241, 255) 100%);
+  background: linear-gradient(90deg, rgb(255, 149, 0) 0%, rgb(186, 37, 231) 0%, rgb(0, 241, 255) 100%);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -271,26 +285,59 @@ main section h2 {
   letter-spacing: 5px;
   font-weight: bold;
   color: yellow;
+  text-align: center;
+}
+main section h3 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 main section article {
+  color: #ffffff;
   border-radius: 4px;
   padding: 1rem;
+  font-family: "Oswald", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
 }
-main section iframe {
-  width: 100%;
+main section article ol {
+  text-align: center;
 }
-
-article h2 {
+main section article ol li {
+  list-style: none;
+}
+main section article ol li a {
+  text-decoration: none;
+  color: yellow;
+}
+main section article h2 {
   font-size: 2rem;
   margin-bottom: 0;
 }
-article p {
+main section article h2 p {
   font-size: 1rem;
   line-height: 1.6;
+  color: black;
+}
+main iframe {
+  width: 100%;
 }
 
-li {
-  list-style: none;
+#white {
+  height: 170px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#white h3 {
+  color: #000000;
+  font-weight: bold;
+  font-style: italic;
 }
 
 ol,

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Merchandising - Mi Marca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .product {
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .product h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #666;
+            margin: 8px 0;
+        }
+        .product .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda de Merchandising - Mi Marca</h1>
+    <div class="grid-container">
+        <!-- Artículo 1: Remera -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Remera">
+            <h2>Remera Clásica</h2>
+            <p>Remera de algodón con logo de Mi Marca</p>
+            <p class="price">$1200</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Artículo 2: Gorra -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Gorra">
+            <h2>Gorra Logo</h2>
+            <p>Gorra ajustable con logo de Mi Marca</p>
+            <p class="price">$800</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Artículo 3: Mate -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Mate">
+            <h2>Mate Personalizado</h2>
+            <p>Mate de acero inoxidable con logo grabado</p>
+            <p class="price">$650</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Artículo 4: Termo -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Termo">
+            <h2>Termo Premium</h2>
+            <p>Termo de 1L con diseño exclusivo de Mi Marca</p>
+            <p class="price">$1500</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Artículo 5: Buzo -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Buzo">
+            <h2>Buzo con Capucha</h2>
+            <p>Buzo de algodón con capucha y logo estampado</p>
+            <p class="price">$2000</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <!-- Artículo 6: Taza -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Taza">
+            <h2>Taza Exclusiva</h2>
+            <p>Taza de cerámica con logo de Mi Marca</p>
+            <p class="price">$500</p>
+            <button>Agregar al Carrito</button>
+        </div>
+    </div>
+</body>
+</html>
