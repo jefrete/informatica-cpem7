@@ -53,6 +53,15 @@
         font-size: 2rem;
         padding: 1.5rem;
       }
+   
+      #grid-header img {
+   width: 100%; /* Ajusta el ancho a todo el header */
+   height: auto; /* Mantiene la proporción de la imagen */
+   max-height: 300px; /* Limita la altura máxima si es necesario */
+   object-fit: cover; /* Asegura que se recorte bien si es más ancho que el header */
+   background-position: left;
+}
+
       /* Navegación */
       .nav-grid {
         grid-area: nav-grid;
@@ -117,7 +126,6 @@
       
 footer {
   grid-area: footer;
-  height: 300px;
 
   font-size: 4rem;
 
