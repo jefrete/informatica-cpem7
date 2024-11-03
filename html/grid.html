@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZXVQ6S0BC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GZXVQ6S0BC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-GZXVQ6S0BC');
-</script>
+      gtag("config", "G-GZXVQ6S0BC");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galería con Grid</title>
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      html{
+      html {
         font-size: 16px;
-
       }
       body {
         font-family: Arial, sans-serif;
@@ -43,24 +47,18 @@
         grid-area: header;
         height: 300px;
         background-image: url("../assets/banner-cpem.png");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        display: flex;
-        align-items: center;
         justify-content: center;
         text-align: center;
         font-size: 2rem;
         padding: 1.5rem;
+        background-position: left;
+        background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+        object-fit: cover; /* Asegura que se recorte bien si es más ancho que el header */
       }
-   
+
       #grid-header img {
-   width: 100%; /* Ajusta el ancho a todo el header */
-   height: auto; /* Mantiene la proporción de la imagen */
-   max-height: 300px; /* Limita la altura máxima si es necesario */
-   object-fit: cover; /* Asegura que se recorte bien si es más ancho que el header */
-   background-position: left;
-}
+        background-position: left;
+      }
 
       /* Navegación */
       .nav-grid {
@@ -113,95 +111,119 @@
         border-radius: 5px;
       }
 
-      .gallery-item:nth-child(1) { background-color: #ffadad; }
-      .gallery-item:nth-child(2) { background-color: #ffd6a5; }
-      .gallery-item:nth-child(3) { background-color: #fdffb6; }
-      .gallery-item:nth-child(4) { background-color: #caffbf; }
-      .gallery-item:nth-child(5) { background-color: #9bf6ff; }
-      .gallery-item:nth-child(6) { background-color: #a0c4ff; }
-      .gallery-item:nth-child(7) { background-color: #bdb2ff; }
-      .gallery-item:nth-child(8) { background-color: #ffc6ff; }
+      .gallery-item:nth-child(1) {
+        background-color: #ffadad;
+      }
+      .gallery-item:nth-child(2) {
+        background-color: #ffd6a5;
+      }
+      .gallery-item:nth-child(3) {
+        background-color: #fdffb6;
+      }
+      .gallery-item:nth-child(4) {
+        background-color: #caffbf;
+      }
+      .gallery-item:nth-child(5) {
+        background-color: #9bf6ff;
+      }
+      .gallery-item:nth-child(6) {
+        background-color: #a0c4ff;
+      }
+      .gallery-item:nth-child(7) {
+        background-color: #bdb2ff;
+      }
+      .gallery-item:nth-child(8) {
+        background-color: #ffc6ff;
+      }
 
       /* Estilos para el footer */
-      
-footer {
-  grid-area: footer;
 
-  font-size: 4rem;
+      footer {
+        grid-area: footer;
 
-  background: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: auto;
+        font-size: 4rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+        background: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        margin-top: auto;
 
-  padding: 20px;
-  /* Espacio interno del footer */
-  text-align: center;
-  /* Centra el texto y los enlaces */
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
+        padding: 20px;
+        /* Espacio interno del footer */
+        text-align: center;
+        /* Centra el texto y los enlaces */
 
-footer .footer-links {
-  margin-bottom: 10px;
-}
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+      }
 
-footer .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
+      footer .footer-links {
+        margin-bottom: 10px;
+      }
 
-.footer-content {
-  /* Ancho máximo del contenido del footer */
-  margin: 0 auto;
-  /* Centra el contenido horizontalmente */
-}
+      footer .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
 
-.social-links {
-  margin-bottom: 20px;
-  /* Espacio debajo de los íconos de redes sociales */
-}
+      .footer-content {
+        /* Ancho máximo del contenido del footer */
+        margin: 0 auto;
+        /* Centra el contenido horizontalmente */
+      }
 
-.social-icon {
-  margin: 0 10px;
-  /* Espacio entre los íconos */
-  display: inline-block;
-  /* Alinea los íconos horizontalmente */
-}
+      .social-links {
+        margin-bottom: 20px;
+        /* Espacio debajo de los íconos de redes sociales */
+      }
 
-.social-icon img {
-  width: 70px;
-  /* Tamaño de los íconos de redes sociales */
-  height: 70px;
-  /* Tamaño de los íconos de redes sociales */
-  vertical-align: middle;
-  /* Alinea los íconos verticalmente */
-  transition: opacity 0.3s ease;
-  /* Efecto de transición para el hover */
-}
+      .social-icon {
+        margin: 0 10px;
+        /* Espacio entre los íconos */
+        display: inline-block;
+        /* Alinea los íconos horizontalmente */
+      }
 
-.social-icon:hover img {
-  opacity: 0.8;
-  /* Efecto de hover en los íconos */
-}
+      .social-icon img {
+        width: 70px;
+        /* Tamaño de los íconos de redes sociales */
+        height: 70px;
+        /* Tamaño de los íconos de redes sociales */
+        vertical-align: middle;
+        /* Alinea los íconos verticalmente */
+        transition: opacity 0.3s ease;
+        /* Efecto de transición para el hover */
+      }
 
-.footer-text {
-  font-size: 1.5rem;
-  /* Tamaño de fuente del texto del footer */
-  line-height: 1.5;
-  /* Altura de línea para mejorar la legibilidad */
-}
+      .social-icon:hover img {
+        opacity: 0.8;
+        /* Efecto de hover en los íconos */
+      }
 
+      .footer-text {
+        font-size: 1.5rem;
+        /* Tamaño de fuente del texto del footer */
+        line-height: 1.5;
+        /* Altura de línea para mejorar la legibilidad */
+      }
+      @media (min-width: 500px) {
+        header {
+          background-image: cover;
+        }
+      }
 
       /* Diseño responsivo para pantallas grandes */
       @media (min-width: 768px) {
+        header {
+          background-image: cover;
+        }
+
         .container {
           grid-template-columns: 1fr 2fr;
           grid-template-rows: auto 1fr auto;
@@ -252,34 +274,49 @@ footer .footer-links a {
         </div>
       </main>
 
- <!-- Footer -->
- <footer class="footer">
-  <div class="footer-content">
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank" class="social-icon">
-        <img src="../assets/logos/facebook-removebg-preview (1).png" alt="Facebook" />
-      </a>
-      <a href="https://twitter.com" target="_blank" class="social-icon">
-        <img src="../assets/logos/twitter-removebg-preview (1).png" alt="Twitter" />
-      </a>
-      <a href="https://instagram.com" target="_blank" class="social-icon">
-        <img src="../assets/logos/instagram-removebg-preview (1).png" alt="Instagram" />
-      </a>
-      <a href="https://linkedin.com" target="_blank" class="social-icon">
-        <img src="../assets/logos/linkedin-removebg-preview (1).png" alt="LinkedIn" />
-      </a>
-      <a href="https://youtube.com" target="_blank" class="social-icon">
-        <img src="../assets/logos/youtube-removebg-preview (2).png" alt="YouTube" />
-      </a>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <img
+                src="../assets/logos/facebook-removebg-preview (1).png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <img
+                src="../assets/logos/twitter-removebg-preview (1).png"
+                alt="Twitter"
+              />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+              <img
+                src="../assets/logos/instagram-removebg-preview (1).png"
+                alt="Instagram"
+              />
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <img
+                src="../assets/logos/linkedin-removebg-preview (1).png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon">
+              <img
+                src="../assets/logos/youtube-removebg-preview (2).png"
+                alt="YouTube"
+              />
+            </a>
+          </div>
+          <p class="footer-text">
+            © 2024 Nombre de la Empresa. Todos los derechos reservados. <br />
+            Dirección: Calle Falsa 123, Ciudad, País. <br />
+            Teléfono: (123) 456-7890. <br />
+            Email: contacto@empresa.com
+          </p>
+        </div>
+      </footer>
     </div>
-    <p class="footer-text">
-      © 2024 Nombre de la Empresa. Todos los derechos reservados. <br />
-      Dirección: Calle Falsa 123, Ciudad, País. <br />
-      Teléfono: (123) 456-7890. <br />
-      Email: contacto@empresa.com
-    </p>
-  </div>
-</footer>
-  </div>
   </body>
 </html>
