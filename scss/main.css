@@ -365,6 +365,7 @@ ul {
 }
 
 aside {
+  display: none;
   width: 100%;
   background-color: #ffa200;
   background-color: #FEA100;
