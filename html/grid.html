@@ -43,23 +43,38 @@
           "footer";
       }
       /* Estilos para el header */
-      #grid-header {
+      grid-header {
         grid-area: header;
         height: 300px;
         background-image: url("../assets/banner-cpem.png");
+        background-size: cover;
+        color: white;
+        display: flex;
+        align-items: center;
         justify-content: center;
         text-align: center;
         font-size: 2rem;
-        padding: 1.5rem;
-        background-position: left;
-        background-repeat: no-repeat; /* Para evitar que la imagen se repita */
-        object-fit: cover; /* Asegura que se recorte bien si es más ancho que el header */
       }
-
       #grid-header img {
         background-position: left;
       }
 
+      /* Estilos para el header */
+      header {
+        grid-area: header;
+        height: 300px;
+        background-image: url("../assets/banner-cpem.png");
+        background-size: cover;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+      }
+      header img {
+        background-position: left;
+      }
       /* Navegación */
       .nav-grid {
         grid-area: nav-grid;
