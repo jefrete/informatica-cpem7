@@ -6,6 +6,7 @@ li{
     background-color: #000000 !important;
 }
 
+
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
     nav {
@@ -24,16 +25,19 @@ li{
     }
 }
 
-
+.navbar{
+    background-color: #000000 !important;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
 .navbar a {
-    font-size: 25px !important;
+    font-size: 1rem !important;
     color:white;
 }
 
 .nav-desktop{
-    background-color: #212529;
     color: white;
-    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +49,6 @@ li{
                 font-size: 25px !important;
 
             }            
-        
         }
         li:hover {
             background-color: red;
