@@ -92,6 +92,11 @@
       }
 
       /* Navegación */
+
+.nav-burger{
+  display: flex;
+}
+
       .nav-grid {
         grid-area: nav-grid;
         height: 50px;
@@ -108,16 +113,14 @@
         align-items: center;
       }
       .nav-grid li {
-        font-size: 20px;
+        font-size: 2rem !important;
         padding: 1rem 1rem !important;
       }
 
       .nav-grid li:hover {
         background-color: red;
         color: white;
-        font-size: 25px;
         scale: 1.2;
-        border-radius: 6px;
       }
 
       .nav-grid a {
@@ -269,6 +272,9 @@
         .nav-grid {
           display: flex;
         }
+        .nav-burger{
+  display: none;
+}
       }
 
       /* Diseño responsivo para pantallas grandes */
@@ -276,7 +282,9 @@
         header {
           background-image: cover;
         }
-
+        .nav-burger{
+  display: none;
+}
         .container {
           grid-template-columns: 1fr 2fr;
           grid-template-rows: auto 1fr auto;
@@ -309,7 +317,7 @@
       </div>
 
       <!-- nav burguer -->
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar nav-burger">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
           <button

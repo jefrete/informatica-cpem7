@@ -1,3 +1,6 @@
+.nav-burger{
+    display: flex;
+}
 
 li{
     list-style: none;
@@ -7,14 +10,14 @@ li{
 }
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
-    nav {
+    .nav-burger {
         display: none !important;
         flex-direction: row-reverse;
     }
 }
 // Estilos para pantallas medianas
 @include respond-to(lg) {
-    nav {
+    .nav-burger {
         display: none !important;
         flex-direction: row-reverse;   
     }
@@ -41,15 +44,12 @@ li{
         li{
             padding: 0px 1.5rem;
             a{
-                font-size: 25px !important;
+                font-size: 2rem !important;
             }            
         }
         li:hover {
             background-color: red;
-            
-            border-radius: 6px;
-
-            scale: 1.2;
+scale: 1.2;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
         }
     }

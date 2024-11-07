@@ -70,6 +70,10 @@ header img {
     line-height: 60px;
   }
 }
+.nav-burger {
+  display: flex;
+}
+
 li {
   list-style: none;
 }
@@ -79,13 +83,13 @@ li {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-  nav {
+  .nav-burger {
     display: none !important;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 769px) {
-  nav {
+  .nav-burger {
     display: none !important;
     flex-direction: row-reverse;
   }
@@ -116,11 +120,10 @@ li {
   padding: 0px 1.5rem;
 }
 .nav-desktop ul li a {
-  font-size: 25px !important;
+  font-size: 2rem !important;
 }
 .nav-desktop ul li:hover {
   background-color: red;
-  border-radius: 6px;
   scale: 1.2;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
 }

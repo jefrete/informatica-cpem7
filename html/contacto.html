@@ -33,10 +33,6 @@
         box-sizing: border-box !important;
       }
 
-      html {
-        font-size: 16px;
-      }
-
       html,
       body,
       header,
@@ -49,9 +45,14 @@
         max-width: 100%;
       }
 
-      body {
+      html {
+        font-size: 16px;
         width: 100%;
+        font-family: "Roboto", serif;
+        font-weight: 100;
+        font-style: normal;
       }
+
       /* Contenedor Grid (Diseño para pantallas pequeñas) */
       .container {
         display: grid;
@@ -81,6 +82,9 @@
       }
 
       /* Navegación */
+      .nav-burger{
+  display: flex;
+}
       .nav-grid {
         display: none;
         background-color: #000000;
@@ -89,9 +93,14 @@
         align-items: center;
         justify-content: center;
       }
-      .navbar {
+      .navbar-nav navbar-link {
         display: flex !important;
         grid-area: nav-grid;
+        padding: 1rem !important;
+      }
+
+      .offcanvas-body {
+        padding: 1rem !important;
       }
 
       .nav-grid ul {
@@ -102,7 +111,7 @@
         justify-content: center;
       }
       .nav-grid li {
-        font-size: 20px;
+        font-size: 2rem;
         padding: 1rem 1rem !important;
 
       }
@@ -110,9 +119,9 @@
         display: flex;
 
         color: white;
-        font-size: 25px;
-        scale: 1.2;
+        scale: 1.1;
         border-radius: 6px;
+        background-color: red;
       }
       .nav-grid a {
         color: white;
@@ -237,7 +246,7 @@
             "footer footer";
         }
         .nav-grid {
-          display: grid;
+          display: flex;
           grid-area: nav-grid;
           justify-content: center;
           align-items: center;
@@ -246,6 +255,11 @@
           grid-area: nav-grid;
           display: none;
         }
+        .nav-burger{
+          grid-area: nav-grid;
+
+  display: none;
+}
       }
     </style>
   </head>
@@ -265,7 +279,7 @@
       </div>
 
       <!-- nav burguer -->
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
           <button
@@ -301,7 +315,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="index.html"
+                    href="../index.html"
                     >Home</a
                   >
                 </li>
