@@ -5,7 +5,6 @@ header {
   align-items: center;
   justify-content: center;
   background-image: url(../assets/Designer1.jpg);
-  height: 275px;
 
   h1 {
     text-align: center;
@@ -16,7 +15,7 @@ header {
     font-family: "Roboto", serif;
     font-style: italic;
     font-weight: bolder;
-    line-height: 40px;
+    margin-bottom: 2rem !important;
   }
 
   // Estilos del logo
@@ -32,34 +31,30 @@ header {
 // Estilos para pantallas pequeñas
 @include respond-to(md) {
   header {
+    display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
 
     img {
-      width: 300px; // Tamaño del logo
+      width: 250px; // Tamaño del logo
       margin-left: 1rem;
     }
 
     h1 {
-      font-size: 45px !important;
+      font-size: 40px !important;
       color: #000000;
       text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-      margin-left: 20px;
-      font-weight: bolder;
-      font-style: italic;
+   
       letter-spacing: 8px;
-      line-height: 45px;
     }
   }
 }
 // Estilos para pantallas medianas
 @include respond-to(lg) {
   header {
-    background-color: #c8ff00;
-    height: 275px;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
     img {
       width: 300px; // Tamaño del logo
@@ -67,7 +62,7 @@ header {
     h1 {
       font-size: 60px !important;
       color: #000000;
-      margin-left: 90px;
+      margin-left: 50 px;
       font-family: "Roboto", serif;
       font-weight: bolder;
       font-style: italic;

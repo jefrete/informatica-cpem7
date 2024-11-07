@@ -5,7 +5,6 @@ header {
   align-items: center;
   justify-content: center;
   background-image: url(../assets/Designer1.jpg);
-  height: 275px;
 }
 header h1 {
   text-align: center;
@@ -16,7 +15,7 @@ header h1 {
   font-family: "Roboto", serif;
   font-style: italic;
   font-weight: bolder;
-  line-height: 40px;
+  margin-bottom: 2rem !important;
 }
 header img {
   max-width: 100%;
@@ -28,31 +27,26 @@ header img {
 
 @media (min-width: 577px) and (max-width: 768px) {
   header {
+    display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
   }
   header img {
-    width: 300px;
+    width: 250px;
     margin-left: 1rem;
   }
   header h1 {
-    font-size: 45px !important;
+    font-size: 40px !important;
     color: #000000;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-    margin-left: 20px;
-    font-weight: bolder;
-    font-style: italic;
     letter-spacing: 8px;
-    line-height: 45px;
   }
 }
 @media (min-width: 769px) {
   header {
-    background-color: #c8ff00;
-    height: 275px;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
   }
   header img {
@@ -61,7 +55,7 @@ header img {
   header h1 {
     font-size: 60px !important;
     color: #000000;
-    margin-left: 90px;
+    margin-left: 50 px;
     font-family: "Roboto", serif;
     font-weight: bolder;
     font-style: italic;
@@ -72,6 +66,11 @@ header img {
 }
 .nav-burger {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #000000 !important;
 }
 
 li {
@@ -79,58 +78,44 @@ li {
 }
 
 .nav-desktop {
-  background-color: #000000 !important;
+  display: none;
+  background-color: #000000;
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .nav-desktop {
+    display: flex;
+    flex-direction: row;
+  }
   .nav-burger {
     display: none !important;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 769px) {
-  .nav-burger {
-    display: none !important;
-    flex-direction: row-reverse;
-  }
-}
-.navbar {
-  background-color: #000000 !important;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.navbar a {
-  font-size: 1rem !important;
-  color: white;
-}
-
-.nav-desktop {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-desktop ul {
-  display: flex;
-}
-.nav-desktop ul li {
-  padding: 0px 1.5rem;
-}
-.nav-desktop ul li a {
-  font-size: 2rem !important;
-}
-.nav-desktop ul li:hover {
-  background-color: red;
-  scale: 1.2;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
-}
-
-@media (max-width: 576px) {
   .nav-desktop {
-    display: none !important;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-desktop ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-desktop ul li {
+    padding: 0px 1.5rem;
+  }
+  .nav-desktop ul li a {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .nav-desktop ul li:hover {
+    background-color: red;
+    scale: 1.2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
   }
 }
 footer {
@@ -353,7 +338,8 @@ main iframe {
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 2rem !important;
 }
 #white h3 {
   color: #000000;
@@ -381,19 +367,6 @@ aside img {
 aside h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  text-align: center;
-}
-aside ul {
-  margin: 0;
-  padding: 0;
-}
-aside ul li {
-  margin-bottom: 0.5rem;
-  list-style: none;
-}
-aside ul li a {
-  color: white;
-  text-decoration: none;
   text-align: center;
 }
 
@@ -427,7 +400,6 @@ code {
     width: 70%;
   }
   main section article {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
   }
   main aside {
@@ -445,7 +417,6 @@ code {
   }
   main aside article {
     text-align: center;
-    font-size: 1;
   }
   pre {
     background-color: #000000;
