@@ -28,9 +28,9 @@
     <style>
       /* Configuración general */
       * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
       }
 
       html {
@@ -43,14 +43,14 @@
       nav,
       .container,
       footer {
-        width: 100%;
+        width: 100% !important;
         overflow-x: hidden;
         /* Evita el desbordamiento horizontal */
         max-width: 100%;
       }
 
       body {
-        font-family: Arial, sans-serif;
+        width: 100%;
       }
       /* Contenedor Grid (Diseño para pantallas pequeñas) */
       .container {
@@ -86,38 +86,50 @@
         background-color: #000000;
         grid-area: nav-grid;
         height: 50px;
-        align-items: center; /* Centra los elementos verticalmente */
         align-items: center;
         justify-content: center;
       }
-      
+      .navbar {
+        display: flex !important;
+        grid-area: nav-grid;
+      }
+
       .nav-grid ul {
         list-style: none;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .nav-grid li {
         font-size: 20px;
-        padding: 1rem 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 1rem 1rem !important;
+
       }
       .nav-grid li:hover {
         display: flex;
 
-        background-color: red;
         color: white;
         font-size: 25px;
         scale: 1.2;
         border-radius: 6px;
       }
       .nav-grid a {
-      
         color: white;
         text-decoration: none;
+
+      }
+      .navbar{
+        background-color: black !important;
+      }
+      .nav-item{
+        padding: 1rem !important ;
+
+      }
+      .nav-item a {
+        
+        padding: 1rem !important ;
+
       }
       /* Estilos para el aside */
       aside {
@@ -127,6 +139,9 @@
         padding: 1.5rem;
       }
 
+      .container {
+        width: 100% !important;
+      }
       /* Estilos para el main */
       main {
         grid-area: main;
@@ -212,6 +227,7 @@
       /* Diseño responsivo para pantallas grandes */
       @media (min-width: 768px) {
         .container {
+          width: 100%;
           grid-template-columns: 1fr 2fr;
           grid-template-rows: 1fr;
           grid-template-areas:
@@ -293,7 +309,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/html.html"
+                    href="html.html"
                     >Html</a
                   >
                 </li>
@@ -301,7 +317,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/css.html"
+                    href="css.html"
                     >Css</a
                   >
                 </li>
@@ -309,7 +325,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/grid.html"
+                    href="grid.html"
                     >Grid</a
                   >
                 </li>
