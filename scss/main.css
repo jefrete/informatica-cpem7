@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: center;
   background-image: url(../assets/Designer1.jpg);
-  height: 300px;
+  height: 275px;
 }
 header h1 {
   text-align: center;
@@ -87,15 +87,15 @@ li {
 @media (min-width: 769px) {
   nav {
     display: none !important;
-    background-color: brown !important;
     flex-direction: row-reverse;
   }
 }
 .navbar {
   background-color: #000000 !important;
-  height: 55px;
+  height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .navbar a {
@@ -113,7 +113,7 @@ li {
   display: flex;
 }
 .nav-desktop ul li {
-  padding: 0px 2rem;
+  padding: 0px 1.5rem;
 }
 .nav-desktop ul li a {
   font-size: 25px !important;
@@ -368,7 +368,7 @@ aside {
   display: none;
   width: 100%;
   background-color: #ffa200;
-  background-color: #FEA100;
+  background-color: #fea100;
   padding: 1rem;
   color: #000000;
 }
