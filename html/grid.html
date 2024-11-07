@@ -42,39 +42,27 @@
           "aside"
           "footer";
       }
-      /* Estilos para el header */
-      grid-header {
-        grid-area: header;
-        height: 275px;
-        background-repeat: no-repeat;
-        background-image: url("../assets/banner-cpem.png");
-        background-size: cover;
-        background-size: contain;
 
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2rem;
-      }
-    
       /* Estilos para el header */
       header {
         grid-area: header;
         height: 300px;
         background-image: url("../assets/banner-cpem.png");
         background-size: cover;
-        color: white;
+        background-repeat: no-repeat;
+        background-color: #000000;
+
+        color: rgb(255, 230, 0);
         display: flex;
         align-items: center;
-        justify-content: center;
         text-align: center;
         font-size: 2rem;
+
+        justify-content: center;
+
+        background-position: 0% 30%;
       }
-      header img {
-        background-position: left;
-      }
+
       /* Navegación */
       .nav-grid {
         grid-area: nav-grid;
@@ -95,6 +83,29 @@
         color: white;
         text-decoration: none;
       }
+
+      .nav-grid li {
+        display: flex;
+        font-size: 20px;
+        padding: 0px 2rem;
+
+      }
+
+      .nav-grid li:hover {
+        padding: 0px 1.5rem;
+
+        background-color: red;
+        border-radius: 6px;
+        scale: 1.2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+      }
+
+      color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            padding: 0px 2rem;
+            font-size: 25px !important;
 
       /* Estilos para el aside */
       #grid-aside {

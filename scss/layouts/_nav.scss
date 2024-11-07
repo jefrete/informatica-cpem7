@@ -44,15 +44,16 @@ li{
     ul{
         display: flex;
         li{
-            padding: 0px 2rem;
+            padding: 0px 1.5rem;
             a{
                 font-size: 25px !important;
-
             }            
         }
         li:hover {
             background-color: red;
+            
             border-radius: 6px;
+
             scale: 1.2;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
         }
