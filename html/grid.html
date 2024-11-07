@@ -36,7 +36,6 @@
       }
       html {
         font-size: 16px;
-        width: 100%;
         font-family: "Roboto", serif;
         font-weight: 100;
         font-style: normal;
@@ -52,10 +51,6 @@
         overflow-x: hidden;
         /* Evita el desbordamiento horizontal */
         max-width: 100%;
-      }
-
-      body {
-        width: 100%;
       }
 
       /* Contenedor Grid (Diseño para pantallas pequeñas) */
@@ -93,44 +88,42 @@
 
       /* Navegación */
 
-.nav-burger{
-  display: flex;
-}
-
-      .nav-grid {
+      .nav-burger {
         grid-area: nav-grid;
-        height: 50px;
+        display: flex;
+        background-color: black !important;
+        height: 50px !important;
+        color: white !important;
+
+      }
+
+      .nav-desktop {
+        grid-area: nav-grid;
+        height: 50px !important;
         display: none;
         justify-content: center;
         align-items: center;
         background-color: #000000;
       }
-
-      .nav-grid ul {
+      .nav-desktop ul {
         list-style: none;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
       }
-      .nav-grid li {
-        font-size: 2rem !important;
+      .nav-desktop li {
         padding: 1rem 1rem !important;
       }
 
-      .nav-grid li:hover {
+      .nav-desktop li:hover {
         background-color: red;
         color: white;
-        scale: 1.2;
       }
-
-      .nav-grid a {
+      .nav-desktop a {
         color: white;
         text-decoration: none;
-      }
+        font-size: 1.5rem !important;
 
-      .navbar {
-        display: flex;
-        padding: 1rem !important;
       }
 
       /* Estilos para el aside */
@@ -139,7 +132,6 @@
         background-color: #ffae00;
         color: rgb(0, 0, 0);
         padding: 1rem !important;
-
       }
 
       /* Estilos para el main */
@@ -265,26 +257,18 @@
         line-height: 1.5;
         /* Altura de línea para mejorar la legibilidad */
       }
-      @media (min-width: 500px) {
-        header {
-          background-image: cover;
-        }
-        .nav-grid {
-          display: flex;
-        }
-        .nav-burger{
-  display: none;
-}
-      }
-
       /* Diseño responsivo para pantallas grandes */
       @media (min-width: 768px) {
         header {
           background-image: cover;
         }
-        .nav-burger{
-  display: none;
-}
+        .nav-burger {
+          display: none;
+        }
+        .nav-desktop {
+          display: flex;
+          grid-area: nav-grid;
+        }
         .container {
           grid-template-columns: 1fr 2fr;
           grid-template-rows: auto 1fr auto;
@@ -295,9 +279,7 @@
             "footer footer";
         }
 
-        .nav-grid {
-          display: flex;
-        }
+      
       }
     </style>
   </head>
@@ -306,7 +288,7 @@
     <div class="container">
       <header id="grid-header"></header>
 
-      <div class="nav-grid">
+      <div class="nav-grid nav-desktop">
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="html.html">Html</a></li>
@@ -317,7 +299,7 @@
       </div>
 
       <!-- nav burguer -->
-      <nav class="navbar nav-burger">
+      <nav class="navbar navbar-dark bg-dark nav-burger">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
           <button
