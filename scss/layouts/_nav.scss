@@ -1,10 +1,11 @@
 .nav-burger {
   display: flex;
-  align-items: center;
-  justify-content: center;    
-  height: 50px;
-  font-size: 1.5rem;
+    align-items: center;
+  justify-content: center;
+  height: 50px !important;
+  font-size: 1.5rem !important;
   background-color: #000000 !important;
+
 }
 
 li {
@@ -14,27 +15,46 @@ li {
 .nav-desktop {
   display: none;
   background-color: #000000;
+  height: 50px !important;
+
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
+}
+
+.nav-desktop ul {
+    display: flex;
 }
 // Estilos para pantallas medianas
 @include respond-to(md) {
-    .nav-desktop{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-burger {
-    display: none !important;
-    flex-direction: row-reverse;
-    }
+  .nav-desktop {
+    display: flex;
+  }
+  .nav-desktop ul {
+    display: flex;
+    
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .nav-desktop li {
+    padding: 1rem 1rem !important;
+  }
+
+  .nav-burger {
+    display: none;
+  }
 }
 // Estilos para pantallas medianas
 @include respond-to(lg) {
+  .nav-burger {
+    display: none;
+  }
   .nav-desktop {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
     ul {
       display: flex;
       flex-direction: row;

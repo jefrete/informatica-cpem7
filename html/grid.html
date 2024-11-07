@@ -90,11 +90,27 @@
 
       .nav-burger {
         grid-area: nav-grid;
-        display: flex;
+        display: flex !important;
         background-color: black !important;
         height: 50px !important;
         color: white !important;
 
+      }
+
+      .nav-burger ul {
+        display: flex;
+      }
+      
+      .nav-burger li {
+        grid-area: nav-grid;
+        display: flex;
+        background-color: black !important;
+        color: white !important;
+        padding: 1rem 1rem !important;
+      }
+      
+      .nav-burger a {
+        color: white !important;
       }
 
       .nav-desktop {
@@ -267,7 +283,6 @@
         }
         .nav-desktop {
           display: flex;
-          grid-area: nav-grid;
         }
         .container {
           grid-template-columns: 1fr 2fr;
@@ -335,7 +350,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="index.html"
+                    href="../index.html"
                     >Home</a
                   >
                 </li>
@@ -343,7 +358,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/html.html"
+                    href="html.html"
                     >Html</a
                   >
                 </li>
@@ -351,7 +366,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/css.html"
+                    href="css.html"
                     >Css</a
                   >
                 </li>
@@ -359,7 +374,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/grid.html"
+                    href="grid.html"
                     >Grid</a
                   >
                 </li>
@@ -367,7 +382,7 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="html/contacto.html"
+                    href="contacto.html"
                     >Contacto</a
                   >
                 </li>
