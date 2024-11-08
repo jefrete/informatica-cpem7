@@ -47,7 +47,6 @@
 
       html {
         font-size: 16px;
-        width: 100%;
         font-family: "Roboto", serif;
         font-weight: 100;
         font-style: normal;
@@ -67,7 +66,7 @@
       /* Estilos para el header */
       header {
         grid-area: header;
-        height: 300px;
+        height: 275px;
         background-image: url("../assets/banner-cpem.png");
         background-size: cover;
         color: white;
@@ -76,28 +75,47 @@
         justify-content: center;
         text-align: center;
         font-size: 2rem;
+        background-position: left;
+        background-size: cover;
       }
       header img {
         background-position: left;
       }
 
       /* Navegación */
-      .nav-burger{
-  display: flex;
-}
+      .nav-burger {
+        grid-area: nav-grid;
+        display: flex;
+        color: white !important;
+
+        background-color: black !important;
+        height: 50px ;
+      
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        align-items: center;
+        justify-content: center;
+      }
       .nav-grid {
         display: none;
         background-color: #000000;
+        color: white !important;
         grid-area: nav-grid;
         height: 50px;
         align-items: center;
         justify-content: center;
-
       }
       .navbar-nav navbar-link {
         display: flex !important;
         grid-area: nav-grid;
         padding: 1rem !important;
+        color: white !important;
+      }
+      .navbar a {
+        display: flex !important;
+        grid-area: nav-grid;
+        padding: 1rem !important;
+        color: white !important;
       }
 
       .offcanvas-body {
@@ -114,7 +132,6 @@
       .nav-grid li {
         font-size: 2rem;
         padding: 1rem 1rem !important;
-
       }
       .nav-grid li:hover {
         display: flex;
@@ -125,22 +142,13 @@
         background-color: red;
       }
       .nav-grid a {
-        color: white;
+        color: white !important;
         text-decoration: none;
         font-size: 1.5rem;
+      }
 
-      }
-      .navbar{
-        background-color: black !important;
-      }
-      .nav-item{
-        padding: 1rem !important ;
-
-      }
       .nav-item a {
-        
         padding: 1rem !important ;
-
       }
       /* Estilos para el aside */
       aside {
@@ -257,11 +265,11 @@
           grid-area: nav-grid;
           display: none;
         }
-        .nav-burger{
+        .nav-burger {
           grid-area: nav-grid;
 
-  display: none;
-}
+          display: none;
+        }
       }
     </style>
   </head>
@@ -281,7 +289,7 @@
       </div>
 
       <!-- nav burguer -->
-      <nav class="navbar">
+      <nav class="navbar nav-burger nav-burger">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
           <button
@@ -330,10 +338,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="css.html"
+                  <a class="nav-link active" aria-current="page" href="css.html"
                     >Css</a
                   >
                 </li>
