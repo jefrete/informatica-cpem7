@@ -8,14 +8,14 @@ header {
 
   h1 {
     text-align: center;
-    font-size: 35px !important;
-    color: #000000;
+    font-size: 40px !important;
+    color: #ff0000;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
     letter-spacing: 5px;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", serif !important;
     font-style: italic;
     font-weight: bolder;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
   }
 
   // Estilos del logo
@@ -40,12 +40,13 @@ header {
 
     img {
       width: 250px; // Tamaño del logo
-      margin-left: 1rem;
     }
 
     h1 {
       font-size: 40px !important;
-      color: #000000;
+      font-family: "Roboto", serif !important;
+    
+      color: #ff0000;
       text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
    
       letter-spacing: 8px;
@@ -63,10 +64,12 @@ header {
       width: 300px; // Tamaño del logo
     }
     h1 {
-      font-size: 60px !important;
-      color: #000000;
-      margin-left: 50 px;
-      font-family: "Roboto", serif;
+      font-size: 70px !important;
+      color: #ff0000;
+
+      font-optical-sizing: auto;
+      font-style: normal;
+
       font-weight: bolder;
       font-style: italic;
       letter-spacing: 10px;
