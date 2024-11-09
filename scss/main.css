@@ -353,7 +353,6 @@ main iframe {
 }
 
 #white {
-  height: 170px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
