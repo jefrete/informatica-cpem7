@@ -65,7 +65,7 @@
     /* Estilos para el header */
     header {
       grid-area: header;
-      height: 275px;
+      height: 300px;
       background-image: url("../assets/banner-cpem.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -86,21 +86,29 @@
     .nav-burger {
       grid-area: nav-grid;
       display: flex;
-      background-color: black !important;
-      height: 50px;
       color: white;
       padding-left: 1rem !important;
       padding-right: 1rem !important;
-    }
+ 
+  align-items: center;
+  justify-content: center;
+  height: 60px !important;
+  font-size: 1.5rem !important;
+  background-color: #000000 !important;
+}
+
 
     .nav-burger ul {
       display: flex;
+    }
+    div .offcanvas-header {
+      justify-content: space-between;
+      padding: 1rem 1rem !important;
     }
 
     .nav-burger li {
       grid-area: nav-grid;
       display: flex;
-      background-color: black !important;
       color: white !important;
       padding: 1rem 1rem !important;
     }
@@ -331,7 +339,7 @@
     </div>
 
     <!-- nav burguer -->
-    <nav class="navbar navbar-dark bg-dark nav-burger">
+    <nav class="navbar navbar-dark bg-dark nav-burger" role="navigation" aria-label="Navegación principal">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"

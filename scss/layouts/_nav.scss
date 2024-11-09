@@ -1,11 +1,11 @@
 .nav-burger {
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
-  height: 50px !important;
+  height: 60px !important;
   font-size: 1.5rem !important;
   background-color: #000000 !important;
-
+  background-color: #000000 !important;
 }
 
 li {
@@ -47,6 +47,8 @@ li {
 }
 // Estilos para pantallas medianas
 @include respond-to(lg) {
+  
+
   .nav-burger {
     display: none;
   }
@@ -55,6 +57,7 @@ li {
     display: flex !important;
     align-items: center !important;
     justify-content: center;
+
     ul {
       display: flex;
       flex-direction: row;
