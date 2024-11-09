@@ -155,7 +155,7 @@
         grid-area: aside;
         background-color: #fea100;
         color: rgb(0, 0, 0);
-        padding: 1.5rem;
+        padding: 1rem;
       }
 
       .container {
@@ -270,6 +270,12 @@
 
           display: none;
         }
+        aside {
+        grid-area: aside;
+        background-color: #fea100;
+        color: rgb(0, 0, 0);
+        padding: 2rem;
+      }
       }
     </style>
   </head>
@@ -364,34 +370,35 @@
         </div>
       </nav>
 
-      <aside>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          ratione, consequatur impedit ipsum odit aut hic earum repellendus
-          rerum corrupti dignissimos dolore, quas rem ad. Animi odio totam nulla
-          assumenda.
-        </p>
+      <aside class="p-4">
+        <h5>¿Necesitas ayuda?</h5>
+        <p>Si tienes alguna pregunta sobre nuestros servicios o necesitas asistencia, no dudes en contactarnos. Nuestro equipo está aquí para ayudarte.</p>
+        <p>Recuerda que todos los campos son obligatorios para poder procesar tu solicitud.</p>
       </aside>
 
       <main>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          ratione, consequatur impedit ipsum odit aut hic earum repellendus
-          rerum corrupti dignissimos dolore, quas rem ad. Animi odio totam nulla
-          assumenda.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          ratione, consequatur impedit ipsum odit aut hic earum repellendus
-          rerum corrupti dignissimos dolore, quas rem ad. Animi odio totam nulla
-          assumenda.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          ratione, consequatur impedit ipsum odit aut hic earum repellendus
-          rerum corrupti dignissimos dolore, quas rem ad. Animi odio totam nulla
-          assumenda.
-        </p>
+     
+    
+<div class="container mt-2 p-5">
+  <div class="contact-form">
+      <h1>Contacto</h1>
+      <form action="enviar.php" method="post">
+          <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          </div>
+          <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+  </div>
+</div>
       </main>
 
       <!-- Footer -->
