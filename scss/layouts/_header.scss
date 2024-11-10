@@ -35,8 +35,7 @@ header {
     flex-direction: row-reverse;
     justify-content: center;
     align-content: center;
-    height: 275px;
-
+    height: 325px !important;
 
     img {
       width: 250px; // Tamaño del logo
@@ -59,7 +58,6 @@ header {
     flex-direction: row-reverse;
     justify-content: center;
     align-content: center;
-    height: 275px;
     img {
       width: 300px; // Tamaño del logo
     }
