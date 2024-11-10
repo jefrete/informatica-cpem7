@@ -36,11 +36,18 @@ footer {
   max-width: 100%;
 }
 
+main h2 {
+  color: white;
+  font-size: 2rem !important;
+  font-weight: bold;
+  transition: background-color 2s ease;
+  /* La transición que cambia el fondo */
+}
+
 h2 {
   background-color: black;
   color: white;
-  font-size: 1rem;
-  cursor: pointer;
+  font-size: 1rem !important;
   font-weight: bold;
   transition: background-color 2s ease;
   /* La transición que cambia el fondo */
@@ -54,10 +61,13 @@ h2:hover {
 
 // Main content
 main {
+  width: 100%;
+  display:flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
-  font-size: 1.5rem;
+  text-align: left;
+  justify-content: start;
+  font-size: 1rem;
   section {
     background: -webkit-linear-gradient(
       90deg,
@@ -83,7 +93,7 @@ main {
       rgba(186, 37, 231, 1) 0%,
       rgba(0, 241, 255, 1) 100%
     );
-
+    width: 100%;
     //   background-color: white;
     display: flex;
     flex-direction: column;
@@ -95,10 +105,7 @@ main {
       margin-bottom: 0;
       margin-top: 1rem;
       display: block;
-      //font-family: Arial, Helvetica, sans-serif;
       padding: 2rem;
-      //font-family:Verdana, Geneva, Tahoma, sans-serif;
-      //font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       letter-spacing: 5px;
       font-weight: bold;
       color: rgb(255, 255, 255);
@@ -191,19 +198,28 @@ aside {
 
 pre {
   width: 100%;
+  text-align: left;
   background-color: #000000;
-  border-radius: 5px;
+  border-radius: 10px;
   color: yellow;
+  padding: 1rem;
+  font-size: 1.25rem;
+  
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 code {
   background-color: #000000;
-  font-family: "Courier New", Courier, monospace;
   white-space: pre-wrap;
   /* Permite que las líneas largas se ajusten */
   display: block;
-  color: greenyellow;
-  padding: 1rem;
+  color: greenyellow !important;
+  padding: 1.5rem !important;
+  font-family: "Roboto", serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (min-width: 768px) {
@@ -242,7 +258,7 @@ code {
       }
     }
   }
-
+/*
   pre {
     background-color: #000000;
     padding: 10px;
@@ -250,15 +266,16 @@ code {
     overflow-x: auto;
     color: #ffffff;
   }
-
-  code {
+*/
+/*  
+code {
     background-color: #000000;
     font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap;
-    /* Permite que las líneas largas se ajusten */
     color: greenyellow;
     padding: 1rem;
   }
+    */
 }
 
 @media (min-width: 1024px) {
@@ -274,21 +291,28 @@ code {
   aside {
     width: 25%;
   }
-
+  /*
   pre {
+    display: flex !important;
+    justify-content: left;
     background-color: #000000;
     padding: 1rem;
     border-radius: 5px;
     color: #ffffff;
     font-size: 1rem;
   }
-
+  */
+  /*
   code {
+
     background-color: #000000;
     font-family: "Courier New", Courier, monospace;
     font-size: 1rem;
     white-space: pre-wrap;
-    /* Permite que las líneas largas se ajusten */
     color: greenyellow;
+    display: flex;
+    justify-content: start;
   }
+    */
+  
 }

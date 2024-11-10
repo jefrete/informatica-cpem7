@@ -26,6 +26,42 @@
       rel="stylesheet"
     />
 
+    <meta
+      name="description"
+      content="Clases de informática CPEM 7, Junín de los Andes: aprende desarrollo web, HTML, CSS, JavaScript y más con recursos interactivos y apoyo docente."
+    />
+    <meta
+      name="keywords"
+      content="informática, CPEM 7, Junín de los Andes, desarrollo web, HTML, CSS, JavaScript, educación, programación"
+    />
+
+    <meta
+      property="og:title"
+      content="Informatica - CPEM 7 - Junín de los Andes"
+    />
+
+    <meta
+      property="og:description"
+      content="Aprendé informática en CPEM 7 de Junín de los Andes con cursos en HTML, CSS y JavaScript."
+    />
+
+    <meta property="og:image" content="assets/logo9.png" />
+    <meta
+      property="og:url"
+      content="https://jefrete.github.io/informatica-cpem7/"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Informatica - CPEM 7 - Junín de los Andes"
+    />
+    <meta
+      name="twitter:description"
+      content="Aprendé informática en CPEM 7 de Junín de los Andes con cursos en HTML, CSS y JavaScript."
+    />
+    <meta name="twitter:image" content="assets/logo9.png" />
+
     <title>Contacto con jefrete</title>
 
     <link
@@ -78,38 +114,19 @@
         height: 300px;
         background-image: url("../assets/banner-cpem.png");
         background-size: cover;
-        color: white;
+        background-position: left;
+        background-repeat: no-repeat;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
         text-align: center;
+
         font-size: 2rem;
-        background-position: left;
-        background-size: cover;
-      }
-
-      header img {
-        background-position: left;
-      }
-
-      div .offcanvas-header {
-        justify-content: space-between;
-        padding: 1rem 1rem !important;
-      }
-
-      .nav-burger li {
-        grid-area: nav-grid;
-        display: flex;
-        color: white !important;
-        padding: 1rem 1rem !important;
-      }
-
-      .nav-burger a {
-        color: white !important;
       }
 
       /* Navegación */
-
       .nav-burger {
         grid-area: nav-grid;
         display: flex;
@@ -123,22 +140,31 @@
         font-size: 1.5rem !important;
         background-color: #000000 !important;
       }
-
+      .nav-burger ul {
+        display: flex;
+      }
       .nav-burger li {
-        padding-left: 1rem !important;
+        display: flex;
+        padding: 1rem 1rem !important;
       }
       .nav-burger a {
         color: white !important;
       }
 
-      div .offcanvas-header {
-        justify-content: space-between !important;
+      .nav-burger li {
+        grid-area: nav-grid;
+        display: flex;
+        color: white !important;
         padding: 1rem 1rem !important;
       }
 
+      .nav-burger a {
+        color: white !important;
+      }
+
       div .offcanvas-header {
-        justify-content: space-between !important;
-        font-size: 1rem !important;
+        justify-content: space-between;
+        padding: 1rem 1rem !important;
       }
 
       /*nav-desktop*/
@@ -153,20 +179,17 @@
       }
       .nav-grid ul {
         list-style: none;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       }
 
       .nav-grid li {
-        font-size: 1rem;
+        display: flex;
         padding: 1rem 1rem !important;
       }
 
       .nav-grid li:hover {
-        display: flex;
-
         color: white;
         background-color: red;
       }
@@ -178,25 +201,29 @@
       }
 
       /* Estilos para el aside */
-      aside {
+      #grid-aside {
         grid-area: aside;
-        background-color: #fea100;
+        background-color: #ffae00;
         color: rgb(0, 0, 0);
-        padding: 1rem !important;
+        padding: 1.5rem !important;
         font-size: 1.5rem !important;
-
-        font-family: "Fira Sans", sans-serif !important;
+        font-family: "Fira Sans", sans-serif;
         font-weight: 300;
         font-style: normal;
       }
-
       #grid-aside h2 {
         font-size: 1.5rem !important;
         font-family: "Fira Sans", sans-serif;
-        font-weight: 400;
+        font-weight: bold;
         font-style: normal;
       }
 
+      #grid-aside h5 {
+        font-size: 1.5rem !important;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+      }
       .container {
         width: 100% !important;
       }
