@@ -1,0 +1,103 @@
+.nav-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px !important;
+  font-size: 1.5rem !important;
+  background-color: #000000 !important;
+  background-color: #000000 !important;
+}
+
+.navbar-toggler{
+  color: white !important;
+  
+}
+
+.navbar-toggler-icon{
+  color: white !important;
+
+}
+
+li {
+  list-style: none;
+}
+
+.nav-desktop {
+  display: none;
+  background-color: #000000;
+  height: 50px !important;
+
+  color: white;
+  font-size: 1.5rem !important;
+
+  justify-content: center;
+
+}
+
+.nav-desktop ul {
+    display: flex;
+}
+
+
+/* Cambia el color de fondo y el color del ícono */
+.navbar-toggler {
+  background-color: #000; /* Color de fondo del botón */
+  border-color: #ffffff; /* Color del borde del botón */
+}
+
+/* Cambia el color del icono */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+// Estilos para pantallas medianas
+@include respond-to(md) {
+  .nav-desktop {
+    display: flex;
+  }
+  .nav-desktop ul {
+    display: flex;
+    
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .nav-desktop li {
+    padding: 1rem 1rem !important;
+  }
+
+  .nav-burger {
+    display: none;
+  }
+}
+// Estilos para pantallas medianas
+@include respond-to(lg) {
+  
+
+  .nav-burger {
+    display: none;
+  }
+  .nav-desktop {
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 0px 1.5rem;
+        a {
+          font-size: 1.5rem;
+          color: white;
+        }
+      }
+      li:hover {
+        background-color: red;
+        scale: 1.2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+      }
+    }
+  }
+}

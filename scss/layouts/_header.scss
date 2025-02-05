@@ -1,0 +1,80 @@
+// Header
+header {
+  display: flex; // Usamos flexbox para la disposición
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/Designer1.jpg);
+
+  h1 {
+    text-align: center;
+    font-size: 40px !important;
+    color: #ff0000;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    letter-spacing: 5px;
+    font-family: "Roboto", serif !important;
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: 1rem !important;
+  }
+
+  // Estilos del logo
+  img {
+    max-width: 100%;
+    /* Cambiar a max-width para que sea responsivo */
+    width: 250px; // Tamaño del logo
+    padding: 1rem;
+    height: auto; /* Para mantener la proporción */
+  }
+}
+
+// Estilos para pantallas pequeñas
+@include respond-to(md) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    height: 325px !important;
+
+    img {
+      width: 250px; // Tamaño del logo
+    }
+
+    h1 {
+      font-size: 40px !important;
+      font-family: "Roboto", serif !important;
+    
+      color: #ff0000;
+      text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+   
+      letter-spacing: 8px;
+    }
+  }
+}
+// Estilos para pantallas medianas
+@include respond-to(lg) {
+  header {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    img {
+      width: 300px; // Tamaño del logo
+    }
+    h1 {
+      font-size: 70px !important;
+      color: #ff0000;
+
+      font-optical-sizing: auto;
+      font-style: normal;
+
+      font-weight: bolder;
+      font-style: italic;
+      letter-spacing: 10px;
+
+      text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+      line-height: 60px;
+
+    }
+  }
+}
