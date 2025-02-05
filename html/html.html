@@ -189,6 +189,7 @@
     <main>
       <section>
         <h2>Introducción a HTML</h2>
+        
         <article>
           <p>
             HTML (HyperText Markup Language) es el lenguaje estándar utilizado
@@ -196,15 +197,17 @@
             <strong>etiquetas</strong> que estructuran el contenido en un
             documento que puede ser interpretado por los navegadores.
           </p>
-
-          <h2>Estructura Básica de un Documento HTML</h2>
-          <p>
+        </article>
+        
+        <h2>Estructura Básica de un Documento HTML</h2>
+        <article>
+        <p>
             Para comenzar a escribir un documento HTML, necesitas establecer una
             estructura básica que indica al navegador cómo interpretar el
             contenido. Aquí tienes un ejemplo de cómo se ve esa estructura:
           </p>
 
-<pre>
+          <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
 &lt;head&gt;
@@ -220,19 +223,27 @@
 &lt;/html&gt;
 
 </pre>
+
 <code>&lt;!DOCTYPE html&gt;</code>
 Esta declaración indica al
 navegador que se está utilizando HTML5.
+<br>
 <code>&lt;html lang="es"&gt;</code>
 La etiqueta html es el contenedor principal de todo el documento.
-<br>
 El atributo lang indica que el contenido está en español.
+<br>
 <code>&lt;head&gt;</code>
+
 Esta sección incluye metadatos sobre la página, como el conjunto de caracteres y el título que aparecerá en la pestaña del navegador.
+<br>
 <code>&lt;body&gt;</code>
 Aquí es donde se coloca el contenido visible de la página.
+<br>
+</article>
 
 <h2>Crear la Estructura Básica con Atajos</h2>
+
+<article>
 <p>
 Para crear rápidamente la estructura básica de un documento HTML5,
 puedes utilizar atajos en editores de código como Visual Studio Code
@@ -243,12 +254,17 @@ Tab. Esto generará automáticamente la estructura básica de un documento HTML5
 <br>
 En Visual con el atajo <code>!</code> para lograr el mismo resultado de manera rápida.
 
+</article>
+
 <h2>Comentarios en HTML</h2>
+
+<article>
 <p>
   Los comentarios son útiles para dejar notas o explicaciones dentro
   del código. Estos comentarios no se mostrarán en el navegador y son
   ideales para documentar tu código.
 </p>
+
 <pre>
 &lt;!-- Este es un comentario en HTML --&gt;
 &lt;p&gt;Este es un párrafo.&lt;/p&gt;
@@ -258,18 +274,25 @@ que abarca múltiples
 líneas.
 --&gt;
 </pre>
+
+</article>
+
         <h2>Etiquetas Básicas de HTML</h2>
-          <h3>Encabezados</h3>
+
+<article>
+
+        <h3>Encabezados</h3>
           <p>
             Las etiquetas <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> se
             utilizan para definir encabezados de diferentes niveles.
             <code>&lt;h1&gt;</code> es el más importante, mientras que
             <code>&lt;h6&gt;</code> es el menos importante.
           </p>
-<pre>
+
+          <pre>
 &lt;h1&gt;Encabezado 1&lt;/h1&gt;
 &lt;h2&gt;Encabezado 2&lt;/h2&gt;
-</pre>
+          </pre>
 
           <h3>Párrafos</h3>
           <p>
@@ -297,11 +320,14 @@ líneas.
             <code>alt</code> para proporcionar un texto alternativo que describe
             la imagen.
           </p>
+          
           <pre>
-&lt;img src="ruta/a/imagen.jpg" alt="Descripción de la imagen"&gt;</pre
-          >
+&lt;img src="ruta/a/imagen.jpg" alt="Descripción de la imagen"&gt;
+
+          </pre>
 
           <h3>Listas</h3>
+
           <p>Puedes crear listas de dos tipos:</p>
           <ul>
             <li>
@@ -338,6 +364,7 @@ líneas.
               específicas de un texto.
             </li>
           </ul>
+          <br>
 <pre>
 &lt;div&gt;
 &lt;h2&gt;Encabezado dentro de un div&lt;/h2&gt;
@@ -345,10 +372,13 @@ líneas.
 &lt;/div&gt;
 &lt;p&gt;Texto con &lt;span style="color:red;"&gt;span rojo&lt;/span&gt; incluido.&lt;/p&gt;
 </pre>
-          <h3>Formularios</h3>
+
+</article>
+<h2>Formularios</h2>
+<article>
           <p>
-            Los formularios se crean con la etiqueta <code>&lt;form&gt;</code>,
-            que puede incluir diversos tipos de campos de entrada.
+            Los formularios se crean con la etiqueta: <code>&lt;form&gt;</code>
+            puede incluir diversos tipos de campos de entrada
           </p>
   <pre>
 &lt;form action="/enviar" method="post"&gt;
@@ -358,16 +388,21 @@ líneas.
 &lt;/form&gt;
 </pre>
 
-          <h3>Tablas</h3>
+</article>
+
+          <h2>Tablas</h2>
+<article>
+
           <p>Las tablas se definen utilizando varias etiquetas:</p>
           <ul>
-            <li><code>&lt;table&gt;</code>: Crea la tabla.</li>
-            <li><code>&lt;tr&gt;</code>: Define una fila de tabla.</li>
-            <li><code>&lt;td&gt;</code>: Define una celda de tabla.</li>
+            <li><code>&lt;table&gt;</code>table: crea la tabla.</li>
+            <li><code>&lt;tr&gt;</code>tr: define una fila de tabla.</li>
+            <li><code>&lt;td&gt;</code>td: define una celda de tabla.</li>
             <li>
-              <code>&lt;th&gt;</code>: Define una celda de encabezado de tabla.
+              <code>&lt;th&gt;</code>th: define una celda de encabezado de tabla.
             </li>
           </ul>
+
           <pre>
         &lt;table&gt;
             &lt;tr&gt;
@@ -378,51 +413,59 @@ líneas.
                 &lt;td&gt;Celda 1&lt;/td&gt;
                 &lt;td&gt;Celda 2&lt;/td&gt;
             &lt;/tr&gt;
-        &lt;/table&gt;
-    </pre
-          >
+        &lt;/table&gt;</pre>
+
+        <img src="../assets/html/table tag.jpg" alt="tablas html5" style="width: 100%;">
+        </article>
 
           <h2>Atributos</h2>
+        <article>
           <p>
             Los atributos son información adicional que puedes agregar a las
             etiquetas HTML para definir su comportamiento o estilo.
           </p>
 
           <h3>Atributos Globales</h3>
+          
           <ul>
             <li>
-              <code>id</code>: Define un identificador único para un elemento.
+              <code>id</code>id: define un identificador único para un elemento.
             </li>
             <li>
-              <code>class</code>: Permite asignar una o varias clases a un
+              <code>class</code>class: permite asignar una o varias clases a un
               elemento.
             </li>
             <li>
-              <code>style</code>: Utilizado para aplicar estilos CSS en línea.
+              <code>style</code>style: utilizado para aplicar estilos CSS en línea.
             </li>
             <li>
-              <code>title</code>: Proporciona información adicional (tooltip)
+              <code>title</code>title: proporciona información adicional (tooltip)
               sobre el elemento.
             </li>
           </ul>
+<br>
           <pre>
+        Ejemplos:
         &lt;p id="parrafo1"&gt;Texto aquí&lt;/p&gt;
         &lt;p class="texto-importante"&gt;Texto aquí&lt;/p&gt;
         &lt;p style="color: blue;"&gt;Texto aquí&lt;/p&gt;
-        &lt;p title="Texto adicional"&gt;Texto aquí&lt;/p&gt;
-    </pre
-          >
+        &lt;p title="Texto adicional"&gt;Texto aquí&lt;/p&gt;</pre>
+      
+  </article>
 
           <h2>Resumen</h2>
-          <p>
+
+          <article>
+            <p>
             HTML proporciona la estructura básica para crear páginas web,
             utilizando etiquetas para definir elementos como encabezados,
             párrafos, imágenes, enlaces, listas y tablas. También puedes usar
             atributos para personalizar la apariencia o el comportamiento de
             estos elementos.
-          </p>
-        </article>
+            </p>
+          </article>
       </section>
+
       <aside>
         <article>
           <h3>Expande tus conocimientos</h3>
