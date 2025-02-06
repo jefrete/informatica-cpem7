@@ -138,105 +138,143 @@
 
           <article>
                   <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que permite a los diseñadores definir el aspecto visual de un documento HTML.</p>
-             
-                  <h2>Sintaxis y Estructura de CSS</h2>
-                  <p>CSS se escribe en una sintaxis sencilla compuesta por reglas que definen cómo deben verse los elementos HTML. Cada regla consta de un selector, una propiedad y un valor.</p>
-<pre>
-Selector { propiedad: valor;}
-</pre>
-                </article>
+
+                <h3>¿Qué es CSS y para qué sirve?</h3>
+                <ul>
+                  <li>CSS significa Cascading Style Sheets (hojas de estilo en cascada).</li>
+                  <li>Es como el maquillaje o la ropa de una página web. Si HTML es el esqueleto (la estructura), CSS es lo que hace que se vea bonita.</li>
+                  <li>Con CSS puedes cambiar colores, fuentes, tamaños, posiciones y mucho más.</li>
+                </ul>
+</article>
+                  
+        <h2>Sintaxis y Estructura de CSS</h2>
+          <article>  
+            <p>CSS se escribe en una sintaxis sencilla compuesta por reglas que definen cómo deben verse los elementos HTML. 
+            Cada regla consta de un selector, una propiedad y un valor.</p>
+            
+          <pre><code>Selector { propiedad: valor;}</code></pre>
+        
+        </article>
                 <h2>Ejemplo de una Regla CSS</h2>
-                <article>                  
-                  <pre>
-<code>
-            h1 {
-            color: blue;
-            font-size: 24px;
-            }
-</code>
-</pre>
+                <article>
+
+<pre><code>h1 { 
+      color: blue;
+      font-size: 24px;
+      }
+</code></pre>
                 </article>
 
                 <h2>Conexión del archivo CSS</h2>
                   <article>
-                  <p>Para que el archivo CSS funcione en tu página HTML, necesitas conectarlo usando la etiqueta <code>&lt;link&gt;</code> dentro de la parte <code>&lt;head&gt;</code></p>
+                  <p>Para que el archivo CSS funcione en tu página HTML, necesitas conectarlo usando la etiqueta <code>&lt;link&gt;</code> dentro de la etiqueta <code>&lt;head&gt;</code></p>
 <pre>
 &lt;link rel="stylesheet" href="styles.css"&gt;
 </pre>
+<img src="../assets/css/link_css.png" alt="link css html5" style="width: 100%;">
                 </article>
 
                 <h2>Selectores CSS</h2>
+
+          
                 <article>
-                <h3>1. Selector de Elemento</h3>
+                  <p>Selector: Es como elegir a quién le vas a poner estilo. Puede ser una etiqueta (como &lt;p&gt;), una clase (.clase) o un ID (#id).
+                    <br>
+                    Propiedad: Es lo que quieres cambiar (por ejemplo, el color, el tamaño o el fondo).
+                    <br>
+                    Valor: Es cómo quieres que se vea esa propiedad (por ejemplo, red para el color o 20px para el tamaño).</p>
+                <h3>1. Selector de Elemento Html</h3>
                   <pre>
 p {color: blue;}</pre>
           
-                  <h3>2. Selector de Clase</h3>
-                  <pre>
-.nombre-clase {
-font-weight: bold;
-}</pre>
-          
-                  <h3>3. Selector de ID</h3>
+                <h3>2. Selector de Clase</h3>
 <pre>
-#encabezado {
-background-color: red;
-}</pre>
-                  <h3>4. Selectores Combinados</h3>
-                  <pre>
-h1.destacado {
-font-size: 24px;
-}</pre>
-                </article>
+.nombre-clase {font-weight: bold;}
+</pre>
 
-                  <h2>Propiedades y Valores CSS</h2>
-                  <article>                    
-                  <h3>Color</h3>
-                  <pre>
-          <code>
-          color: #ff0000;</code>
-                  </pre>
+<h3>3. Selector de ID</h3>
+<pre>
+#encabezado {background-color: red;}
+</pre>
+
+<h3>4. Selectores Combinados</h3>
+<pre>
+h1.destacado {font-size: 24px;}
+</pre>
+</article>
+
+        <h2>Propiedades y Valores CSS</h2>
+            <article>
+              
+             <h3>Colores:</h3>
+      
+        <article>
+                <h4>Se pueden utilizar</h4>
+                <ul>
+                    <li>Nombres de colores:<code>red, blue, green, etc.</code></li>
+                    <li>Códigos hexadecimales:<code>#FF0000</code></li>
+                    <li>RGB y RGBA<code>rgb(255, 0, 0), rgba(255, 0, 0, 0.5)</code></li>
+                </ul>
+            </li>
+            <br>
+
+            <h3>Fuentes:</h3>
+                <ul>
+                    <li><code>font-family: Cambia el tipo de letra</code>
+                       <code>font-size: Cambia el tamaño de la letra</code>
+                       <code>font-weight: Cambia el grosor de la letra</code>
+                       <code>font-style: Cambia el estilo de la letra</code>.
+                      </li>
+                </ul>
+            </li>
+            <h3>Texto:</h3>
+            <code>color: cambia el color del texto</code>
+            <br>
+            <code>text-align: Controla la alineación del texto dentro de un elemento.</code>
+              <p>Valores comunes: left (izquierda, por defecto en idiomas de izquierda a derecha), right(derecha), center (centrado), justify (justificado, ajusta el texto para que ocupe todo el ancho disponible).</p>
+              <br>
+            <code>text-decoration</code>
+            <br>
+            <code>line-height</code>.</li>
+            
+            <li><strong>Fondo:</strong>
+                <ul>
+                    <li><code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-position</code>.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <pre><code>color: #ff0000;</code></pre>
+              
+        <h3>Fuente</h3>
+        <pre><code>font-family: Arial;
+font-size: 16px;</code></pre>
           
-                  <h3>Fuente</h3>
-                  <pre><code>
-          font-family: Arial;
-          font-size: 16px;</code>
-                  </pre>
+        <h3>Espaciado</h3>
+        <pre><code>margin: 10px;
+padding: 5px;</code></pre>
           
-                  <h3>Espaciado</h3>
-                  <pre><code>
-          margin: 10px;
-          padding: 5px;</code>
-                  </pre>
-          
-                  <h3>Bordes</h3>
-                  <pre><code>
-          border: 2px solid #000;</code>
-                  </pre>
+        <h3>Bordes</h3>
+<pre><code>border: 2px solid #000;</code></pre>
 
-                </article>
+      </article>
 
-
-                <h2>Modelo de Caja CSS</h2>
-<article>
+        <h2>Modelo de Caja CSS</h2>
+          <article>
                   <p>El modelo de caja CSS organiza los elementos en cajas con contenido, relleno, borde y margen.</p>
                   <p>Flexbox te permite crear layouts flexibles y adaptables.</p>
-          
-                </article>
-
-
-                  <article>    
-                  <pre><code>
-            .container {
+<pre><code>.container {
             display: flex;
             flex-direction: row;
-            }</code>
-                  </pre>
+            }</code></pre>
 
-                  </section>
-                  <aside>
-                    <article>
-                      <h3>Expande tus conocimientos</h3>
+          </article> 
+
+        </section>
+        
+        <aside>
+          <article>
+          <h3>Expande tus conocimientos</h3>
                       <p>
                         <strong>
                           Aparte de este taller, tenés a tu disposición una gran cantidad de
