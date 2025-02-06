@@ -14,6 +14,8 @@
       gtag("js", new Date());
 
       gtag("config", "G-GZXVQ6S0BC");
+    
+    
     </script>
 
     <meta charset="UTF-8" />
@@ -95,6 +97,14 @@
     <link rel="icon" href="../assets/logo9.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="../scss/mini.css" />
+
+    <style>
+            .containerss {
+            display: flex;
+           
+        }
+    
+    </style>
   </head>
 
   <body>
@@ -113,7 +123,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler btn-custom"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
@@ -187,297 +197,22 @@
 
     <!-- contenido principal -->
     <main>
-       
+
       <section>
-        <div class="containerss">
-            <h1 class="mb-4">Trabajos Prácticos de la Materia</h1>
+        <h2>Trabajos Prácticos de la Materia</h2>
+
+        <div class="containerss container-fluid">
             
-                <a href="https://drive.google.com/drive/folders/1l65XHWtqoEXkhw-Ye3-STGjZJ4nP9Q6l?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">Trabajo 1</a>
+                <a href="https://drive.google.com/drive/folders/1l65XHWtqoEXkhw-Ye3-STGjZJ4nP9Q6l?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 1</a>
 
-                <a href="https://drive.google.com/drive/folders/1ZWdGZ0xyZgm-dVJNjM2vN-NsuRZl01m7?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">Trabajo 2</a>
+                <a href="https://drive.google.com/drive/folders/1ZWdGZ0xyZgm-dVJNjM2vN-NsuRZl01m7?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 2</a>
 
-                <a href="https://drive.google.com/drive/folders/1-GqNDIsKJgsOfLsXes0lbKPVu1gvrrtY?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">Trabajo 3</a>
+                <a href="https://drive.google.com/drive/folders/1-GqNDIsKJgsOfLsXes0lbKPVu1gvrrtY?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 3</a>
 
-                <a href="https://drive.google.com/drive/folders/1Uy2YimhCB2LfM6w2feZ-m0ohEA9eR4UH?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">Trabajo 4</a>
+                <a href="https://drive.google.com/drive/folders/1Uy2YimhCB2LfM6w2feZ-m0ohEA9eR4UH?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 4</a>
 
         </div>
 
-        <h2>Introducción a HTML</h2>
-        
-        <article>
-          <p>
-            HTML (HyperText Markup Language) es el lenguaje estándar utilizado
-            para crear páginas web. Se basa en una serie de
-            <strong>etiquetas</strong> que estructuran el contenido en un
-            documento que puede ser interpretado por los navegadores.
-          </p>
-        </article>
-        
-        <h2>Estructura Básica de un Documento HTML</h2>
-        <article>
-        <p>
-            Para comenzar a escribir un documento HTML, necesitas establecer una
-            estructura básica que indica al navegador cómo interpretar el
-            contenido. Aquí tienes un ejemplo de cómo se ve esa estructura:
-          </p>
-
-          <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;Título de la Página&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- Contenido va aquí --&gt;
-&lt;/body&gt;
-&lt;footer&gt;
-&lt;!-- Contenido va aquí --&gt;
-&lt;/footer&gt;
-&lt;/html&gt;
-
-</pre>
-
-<code>&lt;!DOCTYPE html&gt;</code>
-Esta declaración indica al
-navegador que se está utilizando HTML5.
-<br>
-<code>&lt;html lang="es"&gt;</code>
-La etiqueta html es el contenedor principal de todo el documento.
-El atributo lang indica que el contenido está en español.
-<br>
-<code>&lt;head&gt;</code>
-
-Esta sección incluye metadatos sobre la página, como el conjunto de caracteres y el título que aparecerá en la pestaña del navegador.
-<br>
-<code>&lt;body&gt;</code>
-Aquí es donde se coloca el contenido visible de la página.
-<br>
-</article>
-
-<h2>Crear la Estructura Básica con Atajos</h2>
-
-<article>
-<p>
-Para crear rápidamente la estructura básica de un documento HTML5,
-puedes utilizar atajos en editores de código como Visual Studio Code
-o Sublime Text
-</p>
-Escribe <code>html:5</code> y presiona
-Tab. Esto generará automáticamente la estructura básica de un documento HTML5.
-<br>
-En Visual con el atajo <code>!</code> para lograr el mismo resultado de manera rápida.
-
-</article>
-
-<h2>Comentarios en HTML</h2>
-
-<article>
-<p>
-  Los comentarios son útiles para dejar notas o explicaciones dentro
-  del código. Estos comentarios no se mostrarán en el navegador y son
-  ideales para documentar tu código.
-</p>
-
-<pre>
-&lt;!-- Este es un comentario en HTML --&gt;
-&lt;p&gt;Este es un párrafo.&lt;/p&gt;
-&lt;!--
-Este es un comentario
-que abarca múltiples
-líneas.
---&gt;
-</pre>
-
-</article>
-
-        <h2>Etiquetas Básicas de HTML</h2>
-
-<article>
-
-        <h3>Encabezados</h3>
-          <p>
-            Las etiquetas <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> se
-            utilizan para definir encabezados de diferentes niveles.
-            <code>&lt;h1&gt;</code> es el más importante, mientras que
-            <code>&lt;h6&gt;</code> es el menos importante.
-          </p>
-
-          <pre>
-&lt;h1&gt;Encabezado 1&lt;/h1&gt;
-&lt;h2&gt;Encabezado 2&lt;/h2&gt;
-          </pre>
-
-          <h3>Párrafos</h3>
-          <p>
-            La etiqueta <code>&lt;p&gt;</code> se utiliza para definir un
-            párrafo de texto.
-          </p>
-<pre>
-&lt;p&gt;Este es un párrafo.&lt;/p&gt;
-</pre>
-          <h3>Enlaces</h3>
-          <p>
-            La etiqueta <code>&lt;a&gt;</code> se usa para crear hipervínculos.
-            El atributo <code>href</code> especifica la URL a la que apunta el
-            enlace.
-          </p>
-          <pre>
-&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</pre
-          >
-
-          <h3>Imágenes</h3>
-          <p>
-            La etiqueta <code>&lt;img&gt;</code> se utiliza para insertar
-            imágenes en la página. Debes incluir el atributo
-            <code>src</code> para indicar la ruta de la imagen y el atributo
-            <code>alt</code> para proporcionar un texto alternativo que describe
-            la imagen.
-          </p>
-          
-          <pre>
-&lt;img src="ruta/a/imagen.jpg" alt="Descripción de la imagen"&gt;
-
-          </pre>
-
-          <h3>Listas</h3>
-
-          <p>Puedes crear listas de dos tipos:</p>
-          <ul>
-            <li>
-              Lista no ordenada: Se utiliza la etiqueta <code>&lt;ul&gt;</code>.
-              <pre>
-                &lt;ul&gt;
-                    &lt;li&gt;Elemento 1&lt;/li&gt;
-                    &lt;li&gt;Elemento 2&lt;/li&gt;
-                &lt;/ul&gt;
-            </pre
-              >
-            </li>
-            <li>
-              Lista ordenada: Se utiliza la etiqueta <code>&lt;ol&gt;</code>.
-              <pre>
-                &lt;ol&gt;
-                    &lt;li&gt;Elemento 1&lt;/li&gt;
-                    &lt;li&gt;Elemento 2&lt;/li&gt;
-                &lt;/ol&gt;
-            </pre
-              >
-            </li>
-          </ul>
-
-          <h3>Divisiones y Span</h3>
-          <ul>
-            <li>
-              La etiqueta <code>&lt;div&gt;</code> se usa para definir una
-              sección o división en un documento.
-            </li>
-            <li>
-              La etiqueta <code>&lt;span&gt;</code> se usa para definir una
-              sección en línea, que es útil para aplicar estilos a partes
-              específicas de un texto.
-            </li>
-          </ul>
-          <br>
-<pre>
-&lt;div&gt;
-&lt;h2&gt;Encabezado dentro de un div&lt;/h2&gt;
-&lt;p&gt;Párrafo dentro de un div&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Texto con &lt;span style="color:red;"&gt;span rojo&lt;/span&gt; incluido.&lt;/p&gt;
-</pre>
-
-</article>
-<h2>Formularios</h2>
-<article>
-          <p>
-            Los formularios se crean con la etiqueta: <code>&lt;form&gt;</code>
-            puede incluir diversos tipos de campos de entrada
-          </p>
-  <pre>
-&lt;form action="/enviar" method="post"&gt;
-    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
-    &lt;input type="text" id="nombre" name="nombre"&gt;
-    &lt;input type="submit" value="Enviar"&gt;
-&lt;/form&gt;
-</pre>
-
-</article>
-
-          <h2>Tablas</h2>
-<article>
-
-          <p>Las tablas se definen utilizando varias etiquetas:</p>
-          <ul>
-            <li><code>&lt;table&gt;</code>table: crea la tabla.</li>
-            <li><code>&lt;tr&gt;</code>tr: define una fila de tabla.</li>
-            <li><code>&lt;td&gt;</code>td: define una celda de tabla.</li>
-            <li>
-              <code>&lt;th&gt;</code>th: define una celda de encabezado de tabla.
-            </li>
-          </ul>
-
-          <pre>
-        &lt;table&gt;
-            &lt;tr&gt;
-                &lt;th&gt;Encabezado 1&lt;/th&gt;
-                &lt;th&gt;Encabezado 2&lt;/th&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;Celda 1&lt;/td&gt;
-                &lt;td&gt;Celda 2&lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/table&gt;</pre>
-
-        <img src="../assets/html/table tag.jpg" alt="tablas html5" style="width: 100%;">
-        </article>
-
-          <h2>Atributos</h2>
-        <article>
-          <p>
-            Los atributos son información adicional que puedes agregar a las
-            etiquetas HTML para definir su comportamiento o estilo.
-          </p>
-
-          <h3>Atributos Globales</h3>
-          
-          <ul>
-            <li>
-              <code>id</code>id: define un identificador único para un elemento.
-            </li>
-            <li>
-              <code>class</code>class: permite asignar una o varias clases a un
-              elemento.
-            </li>
-            <li>
-              <code>style</code>style: utilizado para aplicar estilos CSS en línea.
-            </li>
-            <li>
-              <code>title</code>title: proporciona información adicional (tooltip)
-              sobre el elemento.
-            </li>
-          </ul>
-<br>
-          <pre>
-        Ejemplos:
-        &lt;p id="parrafo1"&gt;Texto aquí&lt;/p&gt;
-        &lt;p class="texto-importante"&gt;Texto aquí&lt;/p&gt;
-        &lt;p style="color: blue;"&gt;Texto aquí&lt;/p&gt;
-        &lt;p title="Texto adicional"&gt;Texto aquí&lt;/p&gt;</pre>
-      
-  </article>
-
-          <h2>Resumen</h2>
-
-          <article>
-            <p>
-            HTML proporciona la estructura básica para crear páginas web,
-            utilizando etiquetas para definir elementos como encabezados,
-            párrafos, imágenes, enlaces, listas y tablas. También puedes usar
-            atributos para personalizar la apariencia o el comportamiento de
-            estos elementos.
-            </p>
-          </article>
       </section>
 
       <aside>
