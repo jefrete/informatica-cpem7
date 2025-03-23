@@ -14,8 +14,6 @@
       gtag("js", new Date());
 
       gtag("config", "G-GZXVQ6S0BC");
-    
-    
     </script>
 
     <meta charset="UTF-8" />
@@ -71,7 +69,9 @@
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -96,14 +96,16 @@
 
     <link rel="icon" href="../assets/logo9.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../scss/mini.css" />
-
+    <link rel="stylesheet" href="../scss/main.css" />
     <style>
-            .containerss {
-            display: flex;
-           
-        }
-    
+       .boldfuente{
+        font-family: "Titillium Web", sans-serif;
+        font-size: 4rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
+       }
     </style>
   </head>
 
@@ -118,101 +120,150 @@
         alt="Logo del CPEM 7 de Junín de los Andes para el curso de informática"
       />
     </header>
-    <!-- nav burguer -->
-    <nav class="navbar navbar-dark bg-dark nav-burger">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button
-          class="navbar-toggler btn-custom"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="html.html"
-                  >Html</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="css.html">Css</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="grid.html">TPs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
+        <!-- nav burger -->
+        <nav
+        class="nav-burger navbar navbar-dark bg-dark"
+        role="navigation"
+        aria-label="Navegación principal"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="tutorial.html"
+                    >Tutorial</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="python.html">Python</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="html.html">Html</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="css.html">Css</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="tps.html">TPs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+  
+      <!-- nav dektop -->
+      <div class="nav-desktop">
+        <ul>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="../index.html"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tutorial.html">Tutorial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="python.html">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="html.html">Html</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="css.html">Css</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tps.html">TPs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- nav dektop -->
-    <div class="nav-desktop">
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link active" href="../index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="html.html"
-            >Html</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="css.html">Css</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="grid.html">TPs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-
+  
     <!-- contenido principal -->
     <main>
-
       <section>
-        <h2>Trabajos Prácticos de la Materia</h2>
-
-        <div class="containerss container-fluid">
+        <div class="container py-5">
+            <h1 class="text-center boldfuente mb-4">Configuración de Visual Studio Code para Python</h1>
             
-                <a href="https://drive.google.com/drive/folders/1l65XHWtqoEXkhw-Ye3-STGjZJ4nP9Q6l?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 1</a>
-
-                <a href="https://drive.google.com/drive/folders/1ZWdGZ0xyZgm-dVJNjM2vN-NsuRZl01m7?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 2</a>
-
-                <a href="https://drive.google.com/drive/folders/1-GqNDIsKJgsOfLsXes0lbKPVu1gvrrtY?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 3</a>
-
-                <a href="https://drive.google.com/drive/folders/1Uy2YimhCB2LfM6w2feZ-m0ohEA9eR4UH?usp=drive_link" class="btn m-2 btn-primary btn-custom" target="_blank">Trabajo 4</a>
-
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">1. Descargar e instalar Visual Studio Code</h2>
+                    <ol>
+                        <li>Ve al sitio oficial: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</li>
+                        <li>Descarga la versión correspondiente a tu sistema operativo.</li>
+                        <li>Instala VS Code siguiendo las instrucciones del instalador.</li>
+                    </ol>
+                </div>
+            </div>
+    
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">2. Instalar la Extensión de Python</h2>
+                    <ol>
+                        <li>Abre Visual Studio Code.</li>
+                        <li>Haz clic en la pestaña de <strong>Extensiones</strong> (o presiona <code>Ctrl + Shift + X</code>).</li>
+                        <li>En la barra de búsqueda, escribe <strong>Python</strong>.</li>
+                        <li>Selecciona la extensión de Microsoft y haz clic en <strong>Instalar</strong>.</li>
+                        <li>Si el botón de ejecución (triángulo) no aparece en archivos Python, reinicia VS Code.</li>
+                    </ol>
+                </div>
+            </div>
+    
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">3. Descargar Carpeta de Google Drive y Abrir en VS Code</h2>
+                    <ol>
+                        <li>Abre <a href="https://drive.google.com/" target="_blank">Google Drive</a> y encuentra la carpeta deseada.</li>
+                        <li>Haz clic derecho y selecciona <strong>Descargar</strong>.</li>
+                        <li>Extrae el archivo ZIP en la ubicación que prefieras.</li>
+                        <li>Abre Visual Studio Code.</li>
+                        <li>Haz clic en <strong>Archivo &gt; Abrir Carpeta</strong> y selecciona la carpeta extraída.</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-
       </section>
 
       <aside>

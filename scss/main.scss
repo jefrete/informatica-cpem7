@@ -1,22 +1,18 @@
 // main.scss
-@import "utils/variables";
-@import "utils/mixins";
-//@import 'base/reset';
-//@import 'base/typography';
-//@import 'components/buttons';
-//@import 'components/cards';
-@import "layouts/header";
-@import "layouts/nav";
-@import "layouts/footer";
-//@import 'pages/home';
-//@import 'pages/about';
-@import "layouts/cubo";
+@use "utils/mixins" as *;
+@use "utils/variables" as *;
+
+@use "layouts/header";
+@use "layouts/footer";
+@use "layouts/nav";
+@use "layouts/cubo";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 16px;
   font-family: "Roboto", serif;
@@ -32,16 +28,13 @@ main,
 footer {
   width: 100%;
   overflow-x: hidden;
-  /* Evita el desbordamiento horizontal */
   max-width: 100%;
 }
 
-main h2 {
-  color: white;
-  font-size: 2rem !important;
-  font-weight: bold;
-  transition: background-color 2s ease;
-  /* La transición que cambia el fondo */
+h1 {
+  color: rgb(255, 0, 0);
+  font-size: 3rem;
+  text-align: start;
 }
 
 h2 {
@@ -50,43 +43,46 @@ h2 {
   font-size: 1rem !important;
   font-weight: bold;
   transition: background-color 2s ease;
-  /* La transición que cambia el fondo */
 }
 
 h2:hover {
   background-color: red;
   color: white;
-  /* Cambia de color al hacer hover */
 }
 
-// Main content
+h2 {
+  font-size: 2rem !important;
+  transition: background-color 2s ease;
+
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  display: block;
+  padding: 2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 400;
+}
+
 main {
   width: 100%;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: left;
   justify-content: start;
   font-size: 1rem;
+
   section {
-    background: -webkit-linear-gradient(
-      90deg,
-      rgba(255, 149, 0, 1) 0%,
-      rgba(186, 37, 231, 1) 0%,
-      rgba(0, 241, 255, 1) 100%
-    );
-    background: -moz-linear-gradient(
-      90deg,
-      rgba(255, 149, 0, 1) 0%,
-      rgba(186, 37, 231, 1) 0%,
-      rgba(0, 241, 255, 1) 100%
-    );
-    background: -o-linear-gradient(
-      90deg,
-      rgba(255, 149, 0, 1) 0%,
-      rgba(186, 37, 231, 1) 0%,
-      rgba(0, 241, 255, 1) 100%
-    );
     background: linear-gradient(
       90deg,
       rgba(255, 149, 0, 1) 0%,
@@ -94,13 +90,35 @@ main {
       rgba(0, 241, 255, 1) 100%
     );
     width: 100%;
-    //   background-color: white;
     display: flex;
     flex-direction: column;
-    text-align: center;
-
-    //padding: 1rem;
+    text-align: justify;
+    padding: 1rem;
+    h1 {
+      background-color: black;
+      color: rgb(234, 0, 255);
+      font-size: 3rem;
+      text-align: center;
+      padding: 1rem;
+    }
     h2 {
+      background-color: black;
+      color: white;
+      font-size: 1rem !important;
+      font-weight: bold;
+      transition: background-color 2s ease;
+    }
+
+    h2:hover {
+      background-color: red;
+      color: white;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+      transition: background-color 2s ease;
+
+      color: white;
       font-size: 1.5rem;
       margin-bottom: 0;
       margin-top: 1rem;
@@ -116,47 +134,55 @@ main {
       text-align: center;
       color: rgb(0, 0, 0);
       font-size: 40px;
-      //      font-family: Arial, Helvetica, sans-serif;
       font-weight: 400;
     }
-
-    article {
-      color: #000000;
-      border-radius: 4px;
+    ol,ul {
+      list-style-type: square;
       padding: 1rem;
-      // font-family: "Oswald", serif !important;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
+      margin: 0;
+    }
+    li {
+      list-style-type: square;
+      margin: 0;
+    }
+  }
+
+  article {
+    color: #000000;
+    border-radius: 4px;
+    padding: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+
+    ol {
       text-align: center;
 
-      ol {
-        text-align: center;
-        li {
-          list-style: none;
-          a {
-            text-decoration: none;
-            color: yellow;
-          }
-        }
-      }
+      li {
+        list-style: none;
 
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 0;
-
-        p {
-          font-size: 1rem;
-          line-height: 1.6;
-          color: black;
+        a {
+          text-decoration: none;
+          color: yellow;
         }
       }
     }
-  }
 
-  iframe {
-    width: 100%;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: black;
+      }
+    }
   }
+}
+
+iframe {
+  width: 100%;
 }
 
 #white {
@@ -180,15 +206,16 @@ ul {
 }
 
 aside {
-  display: none;
+  display: none; // Oculta el aside por defecto
   width: 100%;
-  background-color: $secondary-color;
   background-color: #fea100;
   padding: 1rem;
   color: #000000;
+
   img {
     width: 100%;
   }
+
   h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -204,7 +231,6 @@ pre {
   color: yellow;
   padding: 1rem;
   font-size: 1.25rem;
-  
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
@@ -213,7 +239,6 @@ pre {
 code {
   background-color: #000000;
   white-space: pre-wrap;
-  /* Permite que las líneas largas se ajusten */
   display: block;
   color: greenyellow !important;
   padding: 1.5rem !important;
@@ -222,97 +247,60 @@ code {
   font-style: normal;
 }
 
-@media (min-width: 768px) {
-  //main
+// Aplicación de los breakpoints usando mixins
+@include respond-to(sm) {
+  // Estilos para pantallas pequeñas
+  main {
+    font-size: 1.2rem;
+  }
+}
+
+@include respond-to(md) {
+  // Estilos para pantallas medianas
+  main {
+    font-size: 1.5rem;
+  }
+}
+
+@include respond-to(lg) {
+  // Estilos para pantallas grandes (lg)
   main {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
-    font-size: 1.5rem;
 
     section {
-      width: 70%;
-      article {
-        font-weight: 400;
+      width: 75%; // Ajusta el ancho de la sección principal
+    }
+
+    aside {
+      display: flex; // Muestra el aside
+      width: 25%; // Ancho del aside
+    }
+  }
+}
+
+@include respond-to(xl) {
+  // Estilos para pantallas extra grandes (igual que lg)
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    section {
+      width: 75%; // Ajusta el ancho de la sección principal
+      p {
+        font-size: 2rem;
+        line-height: 1.6;
+        color: black;
       }
     }
 
     aside {
-      display: flex;
-      width: 30%;
-      font-family: Arial, Helvetica, sans-serif;
-      h2 {
-        font-size: 3rem !important;
-      }
-
-      h3 {
-        font-size: 2rem !important;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-      }
-
-      article {
-        text-align: center;
-      }
+      display: flex; // Muestra el aside
+      width: 25%; // Ancho del aside
     }
   }
-/*
-  pre {
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    color: #ffffff;
-  }
-*/
-/*  
-code {
-    background-color: #000000;
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre-wrap;
-    color: greenyellow;
-    padding: 1rem;
-  }
-    */
-}
-
-@media (min-width: 1024px) {
-  main {
-    flex-direction: row-reverse;
-
-    section {
-      width: 70%;
-      text-align: left;
-    }
-  }
-
-  aside {
-    width: 25%;
-  }
-  /*
-  pre {
-    display: flex !important;
-    justify-content: left;
-    background-color: #000000;
-    padding: 1rem;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 1rem;
-  }
-  */
-  /*
-  code {
-
-    background-color: #000000;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1rem;
-    white-space: pre-wrap;
-    color: greenyellow;
-    display: flex;
-    justify-content: start;
-  }
-    */
-  
 }

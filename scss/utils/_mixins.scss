@@ -1,16 +1,25 @@
-// Definir el mixin para breakpoints
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == sm {
-    @media (max-width: 576px) {
-      @content; // Para pantallas pequeñas
-    }
-  } @else if $breakpoint == md {
-    @media (min-width: 577px) and (max-width: 768px) {
-      @content; // Para pantallas medianas
-    }
-  } @else if $breakpoint == lg {
-    @media (min-width: 769px) {
-      @content; // Para pantallas grandes
-    }
+// Definición de breakpoints directamente en el mixin
+@mixin respond-to($size) {
+  // Breakpoints
+  $breakpoint-sm: 576px;
+  $breakpoint-md: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-xl: 1200px;
+
+  // Lógica del mixin
+  @if $size == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $size == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) { @content; }
+  }
+  @else if $size == lg {
+    @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl - 1) { @content; }
+  }
+  @else if $size == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+  @else {
+    @warn "El tamaño '#{$size}' no está definido. Usa sm, md, lg o xl.";
   }
 }
